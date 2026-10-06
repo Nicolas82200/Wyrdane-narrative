@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1791269194753,
+      "tag": "0000_crazy_gunslinger",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1791270892241,
+      "tag": "0001_medical_tinkerer",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1791271128352,
+      "tag": "0002_happy_wildside",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1791272137497,
+      "tag": "0003_complex_thing",
+      "breakpoints": true
+    }
+  ]
+}
