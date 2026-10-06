@@ -1,0 +1,2 @@
+ALTER TABLE `characters` ADD `location_id` int;--> statement-breakpoint
+ALTER TABLE `characters` ADD CONSTRAINT `characters_location_id_locations_id_fk` FOREIGN KEY (`location_id`) REFERENCES `locations`(`id`) ON DELETE no action ON UPDATE no action;
