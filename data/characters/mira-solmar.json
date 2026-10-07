@@ -1,0 +1,59 @@
+{
+  "slug": "mira-solmar",
+  "name": "Mira Solmar",
+  "age": 59,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Aide-forgeronne",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements pratiques adaptés au travail"
+  },
+  "personality": {
+    "traits": [
+      "Pratique",
+      "Organisée",
+      "Patiente",
+      "Protectrice"
+    ],
+    "strengths": [
+      "Organisation",
+      "Gestion",
+      "Travail manuel"
+    ],
+    "weaknesses": [
+      "Prudence"
+    ]
+  },
+  "background": "Mira Solmar est l'épouse d'Oren et la mère d'Elira et de Taren. Elle aide à la forge et s'occupe également de certaines tâches administratives.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Forge familiale"
+  },
+  "skills": {
+    "organization": "Bon",
+    "administration": "Bon",
+    "metalworking": "Moyen"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Mira Solmar est l'épouse d'Oren et la mère d'Elira et Taren. Elle aide à la gestion de la forge familiale."
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "garran-holt",
+  "name": "Garran Holt",
+  "age": 46,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Marchand",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de marchand de bonne qualité"
+  },
+  "personality": {
+    "traits": [
+      "Ambitieux",
+      "Compétitif",
+      "Pragmatique",
+      "Calculateur"
+    ],
+    "strengths": [
+      "Commerce",
+      "Négociation",
+      "Gestion"
+    ],
+    "weaknesses": [
+      "Compétitivité",
+      "Intérêt personnel"
+    ]
+  },
+  "background": "Garran est un marchand plus prospère qu'Arven et son principal concurrent local. Malgré leur rivalité commerciale, les deux hommes peuvent coopérer lorsque leurs intérêts convergent.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Commerce local",
+    "financialStatus": "Aisé"
+  },
+  "skills": {
+    "commerce": "Élevé",
+    "negotiation": "Élevé",
+    "management": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre",
+      "caldrath"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Rival commercial",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Garran Holt est un marchand prospère de Valecendre et le principal concurrent local d'Arven. Leur rivalité est principalement commerciale."
+}

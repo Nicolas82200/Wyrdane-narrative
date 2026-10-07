@@ -1,0 +1,60 @@
+{
+  "slug": "taren-solmar",
+  "name": "Taren Solmar",
+  "age": 31,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Forgeron",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": "Robuste",
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de travail de forgeron"
+  },
+  "personality": {
+    "traits": [
+      "Travailleur",
+      "Loyal",
+      "Direct",
+      "Protecteur"
+    ],
+    "strengths": [
+      "Forge",
+      "Force physique",
+      "Travail manuel"
+    ],
+    "weaknesses": [
+      "Peu diplomate",
+      "Tendance à privilégier l'action"
+    ]
+  },
+  "background": "Taren est le fils d'Oren et de Mira et le frère d'Elira. Il travaille avec son père à la forge de Valecendre et entretient une relation proche avec Arven.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Forge familiale"
+  },
+  "skills": {
+    "blacksmithing": "Élevé",
+    "strength": "Bon",
+    "metalworking": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Taren Solmar est le frère d'Elira et le beau-frère d'Arven. Forgeron comme son père, il travaille à la forge familiale de Valecendre."
+}

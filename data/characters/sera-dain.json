@@ -1,0 +1,59 @@
+{
+  "slug": "sera-dain",
+  "name": "Sera Dain",
+  "age": 42,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Boulangère",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de travail de boulangère"
+  },
+  "personality": {
+    "traits": [
+      "Sociable",
+      "Travailleuse",
+      "Chaleureuse",
+      "Pratique"
+    ],
+    "strengths": [
+      "Boulangerie",
+      "Cuisine",
+      "Relations sociales"
+    ],
+    "weaknesses": [
+      "Peu expérimentée en dehors du village"
+    ]
+  },
+  "background": "Sera Dain tient la boulangerie de Valecendre. Elle connaît bien les habitants du village et participe activement à la vie de la communauté.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Boulangerie"
+  },
+  "skills": {
+    "baking": "Élevé",
+    "cooking": "Bon",
+    "socialSkills": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Habitante importante",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Sera Dain est la boulangère de Valecendre. Elle connaît bien la communauté locale et participe activement à la vie du village."
+}

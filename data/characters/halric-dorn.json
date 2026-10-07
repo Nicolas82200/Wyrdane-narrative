@@ -1,0 +1,60 @@
+{
+  "slug": "halric-dorn",
+  "name": "Halric Dorn",
+  "age": 57,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Maire",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements sobres et dignes adaptés à sa fonction"
+  },
+  "personality": {
+    "traits": [
+      "Prudent",
+      "Autoritaire",
+      "Responsable",
+      "Pragmatique"
+    ],
+    "strengths": [
+      "Administration",
+      "Organisation",
+      "Gestion de crise"
+    ],
+    "weaknesses": [
+      "Prudence excessive",
+      "Attachement à l'ordre établi"
+    ]
+  },
+  "background": "Halric Dorn est le maire et responsable civil de Valecendre. Il supervise les affaires du village et représente l'autorité locale.",
+  "possessions": {
+    "home": "valecendre",
+    "office": "Maison communale"
+  },
+  "skills": {
+    "administration": "Élevé",
+    "leadership": "Bon",
+    "organization": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Autorité civile",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Halric Dorn est le maire et responsable civil de Valecendre. Il supervise les affaires du village et représente l'autorité locale."
+}

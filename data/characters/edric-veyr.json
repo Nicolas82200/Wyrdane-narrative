@@ -1,0 +1,63 @@
+{
+  "slug": "edric-veyr",
+  "name": "Edric Veyr",
+  "age": 58,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Marchand",
+  "location": "caldrath",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de marchand adaptés à la ville"
+  },
+  "personality": {
+    "traits": [
+      "Expérimenté",
+      "Pragmatique",
+      "Sociable",
+      "Ambitieux",
+      "Patient"
+    ],
+    "strengths": [
+      "Commerce",
+      "Négociation",
+      "Connaissance du marché"
+    ],
+    "weaknesses": [
+      "Ambition commerciale",
+      "Prudence"
+    ]
+  },
+  "background": "Edric est l'oncle paternel d'Arven. Marchand établi à Caldrath, il possède un étal permanent sur le marché et a enseigné à Arven une grande partie de ce qu'il sait du commerce.",
+  "possessions": {
+    "home": "caldrath",
+    "business": "Étal permanent au marché",
+    "financialStatus": "Aisé"
+  },
+  "skills": {
+    "commerce": "Très élevé",
+    "negotiation": "Élevé",
+    "marketKnowledge": "Très élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "caldrath",
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "caldrath",
+    "aliveAtStart": true
+  },
+  "description": "Edric Veyr est l'oncle paternel d'Arven et un marchand établi à Caldrath. Son expérience commerciale a fortement influencé la vie professionnelle d'Arven."
+}

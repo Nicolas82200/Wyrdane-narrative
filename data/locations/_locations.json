@@ -1,0 +1,82 @@
+[
+	{
+		"slug": "valecendre",
+		"name": "Valecendre",
+		"type": "Village",
+		"kingdom": "Aldrenia",
+		"population": 400,
+		"description": "Petit village d'Aldrenia où vit Arven Veyr avec sa famille. Valecendre est une communauté rurale paisible composée principalement de familles d'agriculteurs, d'artisans et de petits commerçants. Le village possède un marché, une auberge, une forge, une boulangerie, un moulin, un herboriste, des écuries, un temple dédié à Aldrene ainsi que plusieurs habitations et fermes. Avant le Wyrdane, Valecendre mène une existence ordinaire et relativement tranquille. Le village se trouve à environ huit heures de cheval de Caldrath."
+	},
+	{
+		"slug": "rochebrune",
+		"name": "Rochebrune",
+		"type": "Village",
+		"kingdom": "Aldrenia",
+		"population": 180,
+		"description": "Petit village agricole situé à l'ouest de Valecendre. Rochebrune est entouré de terres cultivées et de pâturages. Ses habitants vivent principalement de l'agriculture et de l'élevage. Le village entretient des échanges réguliers avec Valecendre et les communautés voisines."
+	},
+	{
+		"slug": "boisclair",
+		"name": "Boisclair",
+		"type": "Village",
+		"kingdom": "Aldrenia",
+		"population": 150,
+		"description": "Village installé à proximité d'une vaste zone forestière d'Aldrenia. Ses habitants vivent principalement de l'exploitation du bois, de la chasse et de la collecte de plantes sauvages. Boisclair fournit du bois de construction et diverses ressources forestières aux villages et villes alentours."
+	},
+	{
+		"slug": "montfaucon",
+		"name": "Montfaucon",
+		"type": "Village",
+		"kingdom": "Aldrenia",
+		"population": 220,
+		"description": "Petit village établi le long d'une route commerciale reliant plusieurs communautés rurales à Caldrath. Montfaucon accueille régulièrement des voyageurs, des marchands et des artisans itinérants. Quelques ateliers permettent aux habitants de travailler le métal, le cuir et le bois."
+	},
+	{
+		"slug": "varenne",
+		"name": "Varenne",
+		"type": "Village",
+		"kingdom": "Aldrenia",
+		"population": 200,
+		"description": "Village rural connu pour ses élevages et ses productions laitières. Les fermes entourant Varenne fournissent du lait, du fromage et d'autres produits alimentaires aux marchés voisins. Les habitants entretiennent des relations commerciales régulières avec Valecendre."
+	},
+	{
+		"slug": "pont-rouge",
+		"name": "Pont-Rouge",
+		"type": "Village",
+		"kingdom": "Aldrenia",
+		"population": 170,
+		"description": "Petit village construit autour d'un important passage permettant de franchir une rivière sur la route menant vers Caldrath. Pont-Rouge accueille régulièrement des marchands et des voyageurs. Son emplacement en fait une étape pratique pour les commerçants parcourant la région."
+	},
+	{
+		"slug": "caldrath",
+		"name": "Caldrath",
+		"type": "Ville",
+		"kingdom": "Aldrenia",
+		"population": 25000,
+		"description": "Capitale d'Aldrenia et principal centre politique et commercial du royaume. Caldrath concentre une grande partie du pouvoir administratif et économique aldrenien. La ville possède d'importants marchés où de nombreux marchands viennent vendre leurs marchandises. Edric Veyr y possède notamment un emplacement commercial permanent et y exerce son activité de marchand. Caldrath se trouve à environ huit heures de cheval de Valecendre."
+	},
+	{
+		"slug": "port-serein",
+		"name": "Port-Serein",
+		"type": "Ville portuaire",
+		"kingdom": "Thelmere",
+		"population": 1500,
+		"description": "Petite ville portuaire de Thelmere où se croisent pêcheurs, marchands et équipages de navires. Port-Serein joue un rôle important dans le commerce régional et constitue l'un des lieux où les marchandises venues de l'intérieur du royaume rejoignent les routes maritimes."
+	},
+	{
+		"slug": "brumecote",
+		"name": "Brumecôte",
+		"type": "Village",
+		"kingdom": "Thelmere",
+		"population": 260,
+		"description": "Village côtier de Thelmere principalement peuplé de pêcheurs et de familles vivant du commerce maritime. Brumecôte est connu pour ses petites embarcations, ses prises de pêche et son atmosphère souvent humide et brumeuse. Le village échange régulièrement avec les ports et communautés voisines."
+	},
+	{
+		"slug": "valmer",
+		"name": "Valmer",
+		"type": "Village",
+		"kingdom": "Thelmere",
+		"population": 230,
+		"description": "Village marchand situé sur une route reliant les terres intérieures de Thelmere à ses principaux ports. Valmer accueille régulièrement des caravanes et des négociants. Sa position en fait une étape intéressante pour les marchands comme Arven lorsqu'il se rend dans le royaume."
+	}
+]

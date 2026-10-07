@@ -1,0 +1,58 @@
+{
+  "slug": "mara-veyr",
+  "name": "Mara Veyr",
+  "age": 62,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Sans profession",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements traditionnels et pratiques"
+  },
+  "personality": {
+    "traits": [
+      "Traditionnelle",
+      "Directe",
+      "Fière",
+      "Protectrice"
+    ],
+    "strengths": [
+      "Expérience",
+      "Connaissance des traditions",
+      "Détermination"
+    ],
+    "weaknesses": [
+      "Caractère direct",
+      "Difficulté à accepter certains changements"
+    ]
+  },
+  "background": "Mara est la mère d'Arven. Veuve, elle vit à Valecendre et reste attachée aux traditions et aux habitudes de son village.",
+  "possessions": {
+    "home": "valecendre"
+  },
+  "skills": {
+    "survival": "Moyen",
+    "knowledgeOfTraditions": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Mara Veyr est la mère d'Arven. Veuve et profondément attachée aux traditions d'Aldrenia, elle possède un caractère direct et protecteur."
+}

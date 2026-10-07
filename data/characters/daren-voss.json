@@ -1,0 +1,58 @@
+{
+  "slug": "daren-voss",
+  "name": "Daren Voss",
+  "age": 20,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Apprenti marchand",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements simples d'apprenti marchand"
+  },
+  "personality": {
+    "traits": [
+      "Curieux",
+      "Dynamique",
+      "Sociable",
+      "Ambitieux"
+    ],
+    "strengths": [
+      "Apprentissage rapide",
+      "Commerce",
+      "Sociabilité"
+    ],
+    "weaknesses": [
+      "Manque d'expérience",
+      "Impulsivité"
+    ]
+  },
+  "background": "Daren est un jeune apprenti marchand et un ami d'Arven. Il apprend le métier du commerce et bénéficie de l'expérience d'Arven.",
+  "possessions": {
+    "home": "valecendre"
+  },
+  "skills": {
+    "commerce": "Débutant",
+    "negotiation": "Débutant"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Ami et connaissance",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Daren Voss est un jeune apprenti marchand et un ami d'Arven. Il cherche à apprendre le métier et à construire sa propre carrière."
+}

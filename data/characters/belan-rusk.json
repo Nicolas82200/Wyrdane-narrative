@@ -1,0 +1,60 @@
+{
+  "slug": "belan-rusk",
+  "name": "Belan Rusk",
+  "age": 34,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Conducteur de charrette",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de voyage pratiques"
+  },
+  "personality": {
+    "traits": [
+      "Pratique",
+      "Sociable",
+      "Fiable",
+      "Prudent"
+    ],
+    "strengths": [
+      "Conduite",
+      "Connaissance des routes",
+      "Orientation"
+    ],
+    "weaknesses": [
+      "Prudence excessive"
+    ]
+  },
+  "background": "Belan est un conducteur de charrette et un contact commercial d'Arven. Il connaît bien les routes reliant Valecendre aux autres localités.",
+  "possessions": {
+    "home": "valecendre",
+    "vehicle": "Charrette"
+  },
+  "skills": {
+    "driving": "Élevé",
+    "navigation": "Bon",
+    "roadKnowledge": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre",
+      "caldrath"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Contact commercial",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Belan Rusk est un conducteur de charrette et un contact d'Arven. Sa connaissance des routes en fait un intermédiaire utile pour les déplacements et le commerce."
+}
