@@ -1,0 +1,59 @@
+{
+  "slug": "joren-hale",
+  "name": "Joren Hale",
+  "age": 37,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Fermier et éleveur",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": "Robuste",
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de travail agricole"
+  },
+  "personality": {
+    "traits": [
+      "Loyal",
+      "Travailleur",
+      "Simple",
+      "Fiable"
+    ],
+    "strengths": [
+      "Agriculture",
+      "Élevage",
+      "Connaissance du territoire"
+    ],
+    "weaknesses": [
+      "Peu expérimenté en dehors de sa région"
+    ]
+  },
+  "background": "Joren est un ami d'enfance d'Arven. Il travaille comme fermier et éleveur dans les environs de Valecendre.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Exploitation agricole"
+  },
+  "skills": {
+    "farming": "Élevé",
+    "animalHusbandry": "Élevé",
+    "localKnowledge": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Ami d'enfance",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Joren Hale est un ami d'enfance d'Arven. Il vit de l'agriculture et de l'élevage dans les environs de Valecendre."
+}

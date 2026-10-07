@@ -1,0 +1,60 @@
+{
+  "slug": "tomas-veyr",
+  "name": "Tomas Veyr",
+  "age": 29,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Marchand",
+  "location": "caldrath",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de marchand"
+  },
+  "personality": {
+    "traits": [
+      "Ambitieux",
+      "Compétitif",
+      "Travailleur",
+      "Sociable"
+    ],
+    "strengths": [
+      "Commerce",
+      "Ambition",
+      "Négociation"
+    ],
+    "weaknesses": [
+      "Compétitivité",
+      "Impatience"
+    ]
+  },
+  "background": "Tomas est le fils d'Edric et de Maela et le cousin d'Arven. Il travaille avec son père dans le commerce familial et cherche à développer sa propre position.",
+  "possessions": {
+    "home": "caldrath",
+    "business": "Commerce familial"
+  },
+  "skills": {
+    "commerce": "Bon",
+    "negotiation": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "caldrath",
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "caldrath",
+    "aliveAtStart": true
+  },
+  "description": "Tomas Veyr est le cousin d'Arven. Ambitieux et compétitif, il travaille avec son père Edric dans le commerce familial."
+}

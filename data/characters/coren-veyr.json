@@ -1,0 +1,58 @@
+{
+  "slug": "coren-veyr",
+  "name": "Coren Veyr",
+  "age": 39,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Charpentier",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de travail de charpentier"
+  },
+  "personality": {
+    "traits": [
+      "Travailleur",
+      "Calme",
+      "Pratique",
+      "Fiable"
+    ],
+    "strengths": [
+      "Charpenterie",
+      "Travail manuel",
+      "Réparation"
+    ],
+    "weaknesses": [
+      "Peu intéressé par la politique"
+    ]
+  },
+  "background": "Coren est un cousin éloigné d'Arven. Il travaille comme charpentier à Valecendre et est connu pour son savoir-faire manuel.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Atelier de charpentier"
+  },
+  "skills": {
+    "carpentry": "Élevé",
+    "repair": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Coren Veyr est un cousin éloigné d'Arven et un charpentier établi à Valecendre."
+}

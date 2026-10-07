@@ -1,0 +1,56 @@
+{
+  "slug": "hessa-veyr",
+  "name": "Hessa Veyr",
+  "age": 67,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Sans profession",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements traditionnels"
+  },
+  "personality": {
+    "traits": [
+      "Observatrice",
+      "Expérimentée",
+      "Directe",
+      "Attachée à la famille"
+    ],
+    "strengths": [
+      "Mémoire",
+      "Connaissance des histoires familiales"
+    ],
+    "weaknesses": [
+      "Traditionalisme"
+    ]
+  },
+  "background": "Hessa est une tante éloignée d'Arven vivant à Valecendre. Elle connaît de nombreuses histoires anciennes concernant la famille Veyr.",
+  "possessions": {
+    "home": "valecendre"
+  },
+  "skills": {
+    "familyHistory": "Très élevé",
+    "observation": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Hessa Veyr est une tante éloignée d'Arven. Elle vit à Valecendre et connaît de nombreuses histoires anciennes de la famille."
+}

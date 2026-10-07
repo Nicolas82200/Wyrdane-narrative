@@ -1,0 +1,59 @@
+{
+  "slug": "toren-vale",
+  "name": "Toren Vale",
+  "age": 44,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Maître d'écurie",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de travail d'écurie"
+  },
+  "personality": {
+    "traits": [
+      "Pratique",
+      "Calme",
+      "Sociable",
+      "Fiable"
+    ],
+    "strengths": [
+      "Équitation",
+      "Soins des chevaux",
+      "Connaissance des animaux"
+    ],
+    "weaknesses": [
+      "Peu intéressé par la politique"
+    ]
+  },
+  "background": "Toren Vale tient les écuries de Valecendre. Il s'occupe des chevaux du village et connaît bien les voyageurs et marchands qui traversent la région.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Écurie"
+  },
+  "skills": {
+    "horseCare": "Très élevé",
+    "horsemanship": "Élevé",
+    "animalHandling": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Commerçant local",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Toren Vale tient les écuries de Valecendre. Il s'occupe des chevaux et connaît les voyageurs et marchands qui traversent la région."
+}

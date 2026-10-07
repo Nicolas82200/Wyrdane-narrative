@@ -1,0 +1,59 @@
+{
+  "slug": "lysa-veyr",
+  "name": "Lysa Veyr",
+  "age": 24,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Artisane",
+  "location": "caldrath",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements simples adaptés au travail artisanal"
+  },
+  "personality": {
+    "traits": [
+      "Créative",
+      "Sociable",
+      "Curieuse",
+      "Travailleuse"
+    ],
+    "strengths": [
+      "Artisanat",
+      "Travail manuel",
+      "Créativité"
+    ],
+    "weaknesses": [
+      "Manque d'expérience"
+    ]
+  },
+  "background": "Lysa est la fille d'Edric et de Maela et la cousine d'Arven. Elle participe au travail familial et s'intéresse particulièrement aux tissus et à l'artisanat.",
+  "possessions": {
+    "home": "caldrath",
+    "business": "Activité familiale"
+  },
+  "skills": {
+    "craftsmanship": "Bon",
+    "textiles": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "caldrath",
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "caldrath",
+    "aliveAtStart": true
+  },
+  "description": "Lysa Veyr est la cousine d'Arven. Elle participe au travail familial et apprécie particulièrement les tissus et les activités artisanales."
+}

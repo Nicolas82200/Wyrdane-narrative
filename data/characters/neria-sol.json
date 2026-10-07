@@ -1,0 +1,61 @@
+{
+  "slug": "neria-sol",
+  "name": "Neria Sol",
+  "age": 28,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Aubergiste",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements pratiques d'aubergiste"
+  },
+  "personality": {
+    "traits": [
+      "Sociable",
+      "Observatrice",
+      "Curieuse",
+      "Accueillante",
+      "Bien informée"
+    ],
+    "strengths": [
+      "Relations sociales",
+      "Écoute",
+      "Collecte d'informations"
+    ],
+    "weaknesses": [
+      "Curiosité",
+      "Tendance à vouloir tout savoir"
+    ]
+  },
+  "background": "Neria tient l'auberge La Couronne Fendue à Valecendre. Elle est une amie proche d'Arven et connaît de nombreuses informations circulant dans le village.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "La Couronne Fendue"
+  },
+  "skills": {
+    "hospitality": "Élevé",
+    "informationGathering": "Élevé",
+    "socialSkills": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Amie et source d'informations",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Neria Sol est l'aubergiste de La Couronne Fendue et une amie proche d'Arven. Son établissement fait d'elle une personne bien informée sur les événements locaux."
+}

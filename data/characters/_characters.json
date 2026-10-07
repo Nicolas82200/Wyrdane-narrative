@@ -1,0 +1,1189 @@
+[
+	{
+		"slug": "arven-veyr",
+		"name": "Arven Veyr",
+		"age": 35,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Marchand",
+		"location": "valecendre",
+		"appearance": {
+			"height": 178,
+			"build": "Moyenne",
+			"hair": "Bruns foncés",
+			"eyes": "Bruns",
+			"facialHair": "Barbe courte",
+			"clothing": "Vêtements pratiques de marchand"
+		},
+		"personality": {
+			"traits": [
+				"Pragmatique",
+				"Travailleur",
+				"Patient",
+				"Observateur",
+				"Sociable",
+				"Prudent",
+				"Loyal"
+			],
+			"strengths": ["Négociation", "Observation", "Commerce"],
+			"weaknesses": [
+				"Méfiance envers les inconnus",
+				"Évite les confrontations physiques",
+				"Prudence excessive"
+			]
+		},
+		"background": "Arven est né et a grandi à Valecendre. Il est devenu marchand et possède un petit étal dans le village. Son oncle Edric Veyr, marchand à Caldrath, lui a appris une grande partie de ce qu'il sait du commerce. Arven est marié à Elira et père de Nolen. Avant Wyrdane, il mène une vie relativement stable et ordinaire.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Étal de marchand",
+			"vehicle": "Charrette",
+			"mount": "Cheval",
+			"financialStatus": "Confortable sans être riche"
+		},
+		"skills": {
+			"commerce": "Élevé",
+			"negotiation": "Élevé",
+			"observation": "Bon",
+			"horsemanship": "Moyen",
+			"combat": "Faible"
+		},
+		"knowledge": {
+			"locations": ["valecendre", "caldrath"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Protagoniste",
+			"importance": "Principale",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Arven Veyr est un marchand humain de trente-cinq ans vivant à Valecendre, dans le royaume d'Aldrenia. Il mène une vie simple auprès de sa femme Elira et de leur fils Nolen. Il n'est ni guerrier ni héros. Lorsque la première vague de Wyrdane frappe le monde en 0 AW, son existence ordinaire bascule brutalement."
+	},
+	{
+		"slug": "elira-veyr",
+		"name": "Elira Veyr",
+		"age": 33,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Artisane",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements pratiques adaptés au travail artisanal"
+		},
+		"personality": {
+			"traits": [
+				"Prudente",
+				"Stable",
+				"Organisée",
+				"Attentionnée",
+				"Pragmatique"
+			],
+			"strengths": ["Organisation", "Gestion", "Comptabilité"],
+			"weaknesses": [
+				"Prudence excessive",
+				"Peut se montrer inquiète face à l'inconnu"
+			]
+		},
+		"background": "Elira est issue d'une famille d'artisans. Elle a épousé Arven et participe à la gestion de leur activité commerciale, notamment aux comptes et à l'organisation.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Participe à l'activité commerciale d'Arven"
+		},
+		"skills": {
+			"craftsmanship": "Bon",
+			"accounting": "Bon",
+			"organization": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Elira Veyr est l'épouse d'Arven et la mère de Nolen. Prudente et organisée, elle contribue à la stabilité du foyer et à la gestion de l'activité familiale."
+	},
+	{
+		"slug": "nolen-veyr",
+		"name": "Nolen Veyr",
+		"age": 9,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Enfant",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements simples d'enfant"
+		},
+		"personality": {
+			"traits": ["Curieux", "Énergique", "Attaché à sa famille", "Admiratif"],
+			"strengths": ["Curiosité", "Énergie"],
+			"weaknesses": ["Jeune âge", "Manque d'expérience"]
+		},
+		"background": "Nolen est le fils d'Arven et d'Elira. Il grandit à Valecendre dans une famille stable et admire profondément son père.",
+		"possessions": {
+			"home": "valecendre"
+		},
+		"skills": {
+			"combat": "Très faible",
+			"commerce": "Débutant"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Nolen Veyr est le fils de neuf ans d'Arven et d'Elira. Curieux et énergique, il admire son père et mène une enfance ordinaire avant l'arrivée de Wyrdane."
+	},
+	{
+		"slug": "mara-veyr",
+		"name": "Mara Veyr",
+		"age": 62,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Sans profession",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements traditionnels et pratiques"
+		},
+		"personality": {
+			"traits": ["Traditionnelle", "Directe", "Fière", "Protectrice"],
+			"strengths": [
+				"Expérience",
+				"Connaissance des traditions",
+				"Détermination"
+			],
+			"weaknesses": [
+				"Caractère direct",
+				"Difficulté à accepter certains changements"
+			]
+		},
+		"background": "Mara est la mère d'Arven. Veuve, elle vit à Valecendre et reste attachée aux traditions et aux habitudes de son village.",
+		"possessions": {
+			"home": "valecendre"
+		},
+		"skills": {
+			"survival": "Moyen",
+			"knowledgeOfTraditions": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Mara Veyr est la mère d'Arven. Veuve et profondément attachée aux traditions d'Aldrenia, elle possède un caractère direct et protecteur."
+	},
+	{
+		"slug": "edric-veyr",
+		"name": "Edric Veyr",
+		"age": 58,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Marchand",
+		"location": "caldrath",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de marchand adaptés à la ville"
+		},
+		"personality": {
+			"traits": [
+				"Expérimenté",
+				"Pragmatique",
+				"Sociable",
+				"Ambitieux",
+				"Patient"
+			],
+			"strengths": ["Commerce", "Négociation", "Connaissance du marché"],
+			"weaknesses": ["Ambition commerciale", "Prudence"]
+		},
+		"background": "Edric est l'oncle paternel d'Arven. Marchand établi à Caldrath, il possède un étal permanent sur le marché et a enseigné à Arven une grande partie de ce qu'il sait du commerce.",
+		"possessions": {
+			"home": "caldrath",
+			"business": "Étal permanent au marché",
+			"financialStatus": "Aisé"
+		},
+		"skills": {
+			"commerce": "Très élevé",
+			"negotiation": "Élevé",
+			"marketKnowledge": "Très élevé"
+		},
+		"knowledge": {
+			"locations": ["caldrath", "valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "caldrath",
+			"aliveAtStart": true
+		},
+		"description": "Edric Veyr est l'oncle paternel d'Arven et un marchand établi à Caldrath. Son expérience commerciale a fortement influencé la vie professionnelle d'Arven."
+	},
+	{
+		"slug": "maela-veyr",
+		"name": "Maela Veyr",
+		"age": 55,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Commerçante",
+		"location": "caldrath",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de commerçante"
+		},
+		"personality": {
+			"traits": ["Organisée", "Prudente", "Pragmatique", "Sociable"],
+			"strengths": ["Comptabilité", "Achats", "Organisation"],
+			"weaknesses": ["Prudence"]
+		},
+		"background": "Maela est l'épouse d'Edric et la tante par alliance d'Arven. Née à Caldrath, elle participe à la gestion des comptes et aux achats du commerce familial.",
+		"possessions": {
+			"home": "caldrath",
+			"business": "Commerce familial"
+		},
+		"skills": {
+			"accounting": "Élevé",
+			"purchasing": "Élevé",
+			"organization": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["caldrath"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "caldrath",
+			"aliveAtStart": true
+		},
+		"description": "Maela Veyr est l'épouse d'Edric. Née à Caldrath, elle participe activement à la gestion du commerce familial."
+	},
+	{
+		"slug": "tomas-veyr",
+		"name": "Tomas Veyr",
+		"age": 29,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Marchand",
+		"location": "caldrath",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de marchand"
+		},
+		"personality": {
+			"traits": ["Ambitieux", "Compétitif", "Travailleur", "Sociable"],
+			"strengths": ["Commerce", "Ambition", "Négociation"],
+			"weaknesses": ["Compétitivité", "Impatience"]
+		},
+		"background": "Tomas est le fils d'Edric et de Maela et le cousin d'Arven. Il travaille avec son père dans le commerce familial et cherche à développer sa propre position.",
+		"possessions": {
+			"home": "caldrath",
+			"business": "Commerce familial"
+		},
+		"skills": {
+			"commerce": "Bon",
+			"negotiation": "Bon"
+		},
+		"knowledge": {
+			"locations": ["caldrath", "valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "caldrath",
+			"aliveAtStart": true
+		},
+		"description": "Tomas Veyr est le cousin d'Arven. Ambitieux et compétitif, il travaille avec son père Edric dans le commerce familial."
+	},
+	{
+		"slug": "lysa-veyr",
+		"name": "Lysa Veyr",
+		"age": 24,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Artisane",
+		"location": "caldrath",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements simples adaptés au travail artisanal"
+		},
+		"personality": {
+			"traits": ["Créative", "Sociable", "Curieuse", "Travailleuse"],
+			"strengths": ["Artisanat", "Travail manuel", "Créativité"],
+			"weaknesses": ["Manque d'expérience"]
+		},
+		"background": "Lysa est la fille d'Edric et de Maela et la cousine d'Arven. Elle participe au travail familial et s'intéresse particulièrement aux tissus et à l'artisanat.",
+		"possessions": {
+			"home": "caldrath",
+			"business": "Activité familiale"
+		},
+		"skills": {
+			"craftsmanship": "Bon",
+			"textiles": "Bon"
+		},
+		"knowledge": {
+			"locations": ["caldrath", "valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "caldrath",
+			"aliveAtStart": true
+		},
+		"description": "Lysa Veyr est la cousine d'Arven. Elle participe au travail familial et apprécie particulièrement les tissus et les activités artisanales."
+	},
+	{
+		"slug": "coren-veyr",
+		"name": "Coren Veyr",
+		"age": 39,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Charpentier",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de travail de charpentier"
+		},
+		"personality": {
+			"traits": ["Travailleur", "Calme", "Pratique", "Fiable"],
+			"strengths": ["Charpenterie", "Travail manuel", "Réparation"],
+			"weaknesses": ["Peu intéressé par la politique"]
+		},
+		"background": "Coren est un cousin éloigné d'Arven. Il travaille comme charpentier à Valecendre et est connu pour son savoir-faire manuel.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Atelier de charpentier"
+		},
+		"skills": {
+			"carpentry": "Élevé",
+			"repair": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Coren Veyr est un cousin éloigné d'Arven et un charpentier établi à Valecendre."
+	},
+	{
+		"slug": "hessa-veyr",
+		"name": "Hessa Veyr",
+		"age": 67,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Sans profession",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements traditionnels"
+		},
+		"personality": {
+			"traits": [
+				"Observatrice",
+				"Expérimentée",
+				"Directe",
+				"Attachée à la famille"
+			],
+			"strengths": ["Mémoire", "Connaissance des histoires familiales"],
+			"weaknesses": ["Traditionalisme"]
+		},
+		"background": "Hessa est une tante éloignée d'Arven vivant à Valecendre. Elle connaît de nombreuses histoires anciennes concernant la famille Veyr.",
+		"possessions": {
+			"home": "valecendre"
+		},
+		"skills": {
+			"familyHistory": "Très élevé",
+			"observation": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Hessa Veyr est une tante éloignée d'Arven. Elle vit à Valecendre et connaît de nombreuses histoires anciennes de la famille."
+	},
+	{
+		"slug": "oren-solmar",
+		"name": "Oren Solmar",
+		"age": 61,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Forgeron",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": "Robuste",
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de travail de forgeron"
+		},
+		"personality": {
+			"traits": ["Travailleur", "Direct", "Fier", "Protecteur"],
+			"strengths": ["Forge", "Travail manuel", "Endurance"],
+			"weaknesses": ["Caractère direct", "Entêtement"]
+		},
+		"background": "Oren Solmar est le père d'Elira et de Taren. Il travaille comme forgeron à Valecendre.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Forge"
+		},
+		"skills": {
+			"blacksmithing": "Très élevé",
+			"metalworking": "Très élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Oren Solmar est le père d'Elira et de Taren. Forgeron à Valecendre, il est habitué au travail physique et possède une forte personnalité."
+	},
+	{
+		"slug": "mira-solmar",
+		"name": "Mira Solmar",
+		"age": 59,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Aide-forgeronne",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements pratiques adaptés au travail"
+		},
+		"personality": {
+			"traits": ["Pratique", "Organisée", "Patiente", "Protectrice"],
+			"strengths": ["Organisation", "Gestion", "Travail manuel"],
+			"weaknesses": ["Prudence"]
+		},
+		"background": "Mira Solmar est l'épouse d'Oren et la mère d'Elira et de Taren. Elle aide à la forge et s'occupe également de certaines tâches administratives.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Forge familiale"
+		},
+		"skills": {
+			"organization": "Bon",
+			"administration": "Bon",
+			"metalworking": "Moyen"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Mira Solmar est l'épouse d'Oren et la mère d'Elira et Taren. Elle aide à la gestion de la forge familiale."
+	},
+	{
+		"slug": "taren-solmar",
+		"name": "Taren Solmar",
+		"age": 31,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Forgeron",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": "Robuste",
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de travail de forgeron"
+		},
+		"personality": {
+			"traits": ["Travailleur", "Loyal", "Direct", "Protecteur"],
+			"strengths": ["Forge", "Force physique", "Travail manuel"],
+			"weaknesses": ["Peu diplomate", "Tendance à privilégier l'action"]
+		},
+		"background": "Taren est le fils d'Oren et de Mira et le frère d'Elira. Il travaille avec son père à la forge de Valecendre et entretient une relation proche avec Arven.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Forge familiale"
+		},
+		"skills": {
+			"blacksmithing": "Élevé",
+			"strength": "Bon",
+			"metalworking": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Famille du protagoniste",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Taren Solmar est le frère d'Elira et le beau-frère d'Arven. Forgeron comme son père, il travaille à la forge familiale de Valecendre."
+	},
+	{
+		"slug": "daren-voss",
+		"name": "Daren Voss",
+		"age": 20,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Apprenti marchand",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements simples d'apprenti marchand"
+		},
+		"personality": {
+			"traits": ["Curieux", "Dynamique", "Sociable", "Ambitieux"],
+			"strengths": ["Apprentissage rapide", "Commerce", "Sociabilité"],
+			"weaknesses": ["Manque d'expérience", "Impulsivité"]
+		},
+		"background": "Daren est un jeune apprenti marchand et un ami d'Arven. Il apprend le métier du commerce et bénéficie de l'expérience d'Arven.",
+		"possessions": {
+			"home": "valecendre"
+		},
+		"skills": {
+			"commerce": "Débutant",
+			"negotiation": "Débutant"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Ami et connaissance",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Daren Voss est un jeune apprenti marchand et un ami d'Arven. Il cherche à apprendre le métier et à construire sa propre carrière."
+	},
+	{
+		"slug": "neria-sol",
+		"name": "Neria Sol",
+		"age": 28,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Aubergiste",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements pratiques d'aubergiste"
+		},
+		"personality": {
+			"traits": [
+				"Sociable",
+				"Observatrice",
+				"Curieuse",
+				"Accueillante",
+				"Bien informée"
+			],
+			"strengths": ["Relations sociales", "Écoute", "Collecte d'informations"],
+			"weaknesses": ["Curiosité", "Tendance à vouloir tout savoir"]
+		},
+		"background": "Neria tient l'auberge La Couronne Fendue à Valecendre. Elle est une amie proche d'Arven et connaît de nombreuses informations circulant dans le village.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "La Couronne Fendue"
+		},
+		"skills": {
+			"hospitality": "Élevé",
+			"informationGathering": "Élevé",
+			"socialSkills": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Amie et source d'informations",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Neria Sol est l'aubergiste de La Couronne Fendue et une amie proche d'Arven. Son établissement fait d'elle une personne bien informée sur les événements locaux."
+	},
+	{
+		"slug": "joren-hale",
+		"name": "Joren Hale",
+		"age": 37,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Fermier et éleveur",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": "Robuste",
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de travail agricole"
+		},
+		"personality": {
+			"traits": ["Loyal", "Travailleur", "Simple", "Fiable"],
+			"strengths": ["Agriculture", "Élevage", "Connaissance du territoire"],
+			"weaknesses": ["Peu expérimenté en dehors de sa région"]
+		},
+		"background": "Joren est un ami d'enfance d'Arven. Il travaille comme fermier et éleveur dans les environs de Valecendre.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Exploitation agricole"
+		},
+		"skills": {
+			"farming": "Élevé",
+			"animalHusbandry": "Élevé",
+			"localKnowledge": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Ami d'enfance",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Joren Hale est un ami d'enfance d'Arven. Il vit de l'agriculture et de l'élevage dans les environs de Valecendre."
+	},
+	{
+		"slug": "belan-rusk",
+		"name": "Belan Rusk",
+		"age": 34,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Conducteur de charrette",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de voyage pratiques"
+		},
+		"personality": {
+			"traits": ["Pratique", "Sociable", "Fiable", "Prudent"],
+			"strengths": ["Conduite", "Connaissance des routes", "Orientation"],
+			"weaknesses": ["Prudence excessive"]
+		},
+		"background": "Belan est un conducteur de charrette et un contact commercial d'Arven. Il connaît bien les routes reliant Valecendre aux autres localités.",
+		"possessions": {
+			"home": "valecendre",
+			"vehicle": "Charrette"
+		},
+		"skills": {
+			"driving": "Élevé",
+			"navigation": "Bon",
+			"roadKnowledge": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre", "caldrath"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Contact commercial",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Belan Rusk est un conducteur de charrette et un contact d'Arven. Sa connaissance des routes en fait un intermédiaire utile pour les déplacements et le commerce."
+	},
+	{
+		"slug": "garran-holt",
+		"name": "Garran Holt",
+		"age": 46,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Marchand",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de marchand de bonne qualité"
+		},
+		"personality": {
+			"traits": ["Ambitieux", "Compétitif", "Pragmatique", "Calculateur"],
+			"strengths": ["Commerce", "Négociation", "Gestion"],
+			"weaknesses": ["Compétitivité", "Intérêt personnel"]
+		},
+		"background": "Garran est un marchand plus prospère qu'Arven et son principal concurrent local. Malgré leur rivalité commerciale, les deux hommes peuvent coopérer lorsque leurs intérêts convergent.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Commerce local",
+			"financialStatus": "Aisé"
+		},
+		"skills": {
+			"commerce": "Élevé",
+			"negotiation": "Élevé",
+			"management": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre", "caldrath"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Rival commercial",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Garran Holt est un marchand prospère de Valecendre et le principal concurrent local d'Arven. Leur rivalité est principalement commerciale."
+	},
+	{
+		"slug": "ser-aldren-marr",
+		"name": "Ser Aldren Marr",
+		"age": 41,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Garde local",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": "Robuste",
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Équipement de garde"
+		},
+		"personality": {
+			"traits": ["Discipliné", "Vigilant", "Autoritaire", "Protecteur"],
+			"strengths": ["Combat", "Vigilance", "Autorité"],
+			"weaknesses": ["Méfiance", "Rigidité"]
+		},
+		"background": "Ser Aldren Marr est l'un des représentants de la garde locale de Valecendre. Il est chargé de maintenir l'ordre et de protéger les habitants.",
+		"possessions": {
+			"home": "valecendre",
+			"equipment": "Équipement de garde"
+		},
+		"skills": {
+			"combat": "Élevé",
+			"vigilance": "Élevé",
+			"authority": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Autorité locale",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Ser Aldren Marr est un garde local chargé de maintenir l'ordre à Valecendre et de protéger ses habitants."
+	},
+	{
+		"slug": "pere-oren",
+		"name": "Père Oren",
+		"age": 59,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Prêtre d'Aldrene",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Tenue religieuse d'Aldrene"
+		},
+		"personality": {
+			"traits": ["Dévot", "Calme", "Sérieux", "Bienveillant"],
+			"strengths": ["Religion", "Conseil", "Écoute"],
+			"weaknesses": ["Traditionalisme", "Foi rigoureuse"]
+		},
+		"background": "Le Père Oren est le prêtre d'Aldrene de Valecendre. Il joue un rôle religieux important dans la communauté et accompagne les habitants dans leur vie quotidienne.",
+		"possessions": {
+			"home": "valecendre",
+			"placeOfWorship": "Temple d'Aldrene"
+		},
+		"skills": {
+			"religion": "Très élevé",
+			"counseling": "Bon",
+			"lore": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Autorité religieuse",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Le Père Oren est le prêtre d'Aldrene à Valecendre. Il représente la religion d'Aldrene au sein de la communauté."
+	},
+	{
+		"slug": "elda-renn",
+		"name": "Elda Renn",
+		"age": 52,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Herboriste",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements simples et pratiques"
+		},
+		"personality": {
+			"traits": ["Calme", "Observatrice", "Patiente", "Indépendante"],
+			"strengths": ["Herboristerie", "Connaissance des plantes", "Observation"],
+			"weaknesses": ["Réservée", "Peu intéressée par la politique"]
+		},
+		"background": "Elda Renn est l'herboriste de Valecendre. Elle connaît les plantes médicinales et fournit des remèdes aux habitants du village.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Herboristerie"
+		},
+		"skills": {
+			"herbalism": "Très élevé",
+			"medicine": "Bon",
+			"botany": "Très élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Habitante importante",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Elda Renn est l'herboriste de Valecendre. Elle possède une grande connaissance des plantes médicinales et des remèdes traditionnels."
+	},
+	{
+		"slug": "bram-kell",
+		"name": "Bram Kell",
+		"age": 48,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Meunier",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": "Robuste",
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de travail"
+		},
+		"personality": {
+			"traits": ["Travailleur", "Pratique", "Calme", "Fiable"],
+			"strengths": ["Meunerie", "Travail physique", "Gestion des stocks"],
+			"weaknesses": ["Peu intéressé par les affaires extérieures"]
+		},
+		"background": "Bram Kell est le meunier de Valecendre. Son travail est essentiel à l'approvisionnement quotidien du village.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Moulin"
+		},
+		"skills": {
+			"milling": "Élevé",
+			"stockManagement": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Habitant important",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Bram Kell est le meunier de Valecendre et joue un rôle essentiel dans l'approvisionnement alimentaire du village."
+	},
+	{
+		"slug": "sera-dain",
+		"name": "Sera Dain",
+		"age": 42,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Boulangère",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de travail de boulangère"
+		},
+		"personality": {
+			"traits": ["Sociable", "Travailleuse", "Chaleureuse", "Pratique"],
+			"strengths": ["Boulangerie", "Cuisine", "Relations sociales"],
+			"weaknesses": ["Peu expérimentée en dehors du village"]
+		},
+		"background": "Sera Dain tient la boulangerie de Valecendre. Elle connaît bien les habitants du village et participe activement à la vie de la communauté.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Boulangerie"
+		},
+		"skills": {
+			"baking": "Élevé",
+			"cooking": "Bon",
+			"socialSkills": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Habitante importante",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Sera Dain est la boulangère de Valecendre. Elle connaît bien la communauté locale et participe activement à la vie du village."
+	},
+	{
+		"slug": "halric-dorn",
+		"name": "Halric Dorn",
+		"age": 57,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Maire",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements sobres et dignes adaptés à sa fonction"
+		},
+		"personality": {
+			"traits": ["Prudent", "Autoritaire", "Responsable", "Pragmatique"],
+			"strengths": ["Administration", "Organisation", "Gestion de crise"],
+			"weaknesses": ["Prudence excessive", "Attachement à l'ordre établi"]
+		},
+		"background": "Halric Dorn est le maire et responsable civil de Valecendre. Il supervise les affaires du village et représente l'autorité locale.",
+		"possessions": {
+			"home": "valecendre",
+			"office": "Maison communale"
+		},
+		"skills": {
+			"administration": "Élevé",
+			"leadership": "Bon",
+			"organization": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Autorité civile",
+			"importance": "Majeure",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Halric Dorn est le maire et responsable civil de Valecendre. Il supervise les affaires du village et représente l'autorité locale."
+	},
+	{
+		"slug": "mira-fen",
+		"name": "Mira Fen",
+		"age": 64,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Sage-femme",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements simples et pratiques"
+		},
+		"personality": {
+			"traits": ["Bienveillante", "Patiente", "Calme", "Expérimentée"],
+			"strengths": ["Médecine traditionnelle", "Accouchement", "Soins"],
+			"weaknesses": ["Âge", "Mobilité réduite"]
+		},
+		"background": "Mira Fen est la sage-femme de Valecendre. Elle possède une longue expérience des soins et accompagne les familles du village depuis de nombreuses années.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Maison de soins"
+		},
+		"skills": {
+			"midwifery": "Très élevé",
+			"medicine": "Bon",
+			"healing": "Bon"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Soignante locale",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Mira Fen est la sage-femme de Valecendre. Elle possède une longue expérience des soins et connaît de nombreuses familles du village."
+	},
+	{
+		"slug": "toren-vale",
+		"name": "Toren Vale",
+		"age": 44,
+		"race": "Humain",
+		"kingdom": "Aldrenia",
+		"occupation": "Maître d'écurie",
+		"location": "valecendre",
+		"appearance": {
+			"height": null,
+			"build": null,
+			"hair": null,
+			"eyes": null,
+			"facialHair": null,
+			"clothing": "Vêtements de travail d'écurie"
+		},
+		"personality": {
+			"traits": ["Pratique", "Calme", "Sociable", "Fiable"],
+			"strengths": [
+				"Équitation",
+				"Soins des chevaux",
+				"Connaissance des animaux"
+			],
+			"weaknesses": ["Peu intéressé par la politique"]
+		},
+		"background": "Toren Vale tient les écuries de Valecendre. Il s'occupe des chevaux du village et connaît bien les voyageurs et marchands qui traversent la région.",
+		"possessions": {
+			"home": "valecendre",
+			"business": "Écurie"
+		},
+		"skills": {
+			"horseCare": "Très élevé",
+			"horsemanship": "Élevé",
+			"animalHandling": "Élevé"
+		},
+		"knowledge": {
+			"locations": ["valecendre"],
+			"kingdoms": ["Aldrenia"]
+		},
+		"narrative": {
+			"role": "Commerçant local",
+			"importance": "Secondaire",
+			"startingYear": "0 AW",
+			"startingLocation": "valecendre",
+			"aliveAtStart": true
+		},
+		"description": "Toren Vale tient les écuries de Valecendre. Il s'occupe des chevaux et connaît les voyageurs et marchands qui traversent la région."
+	}
+]

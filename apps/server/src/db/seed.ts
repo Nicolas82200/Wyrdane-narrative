@@ -1,228 +1,197 @@
-import "dotenv/config";
-import { eq } from "drizzle-orm";
-
 import { db } from "./index.js";
-import { characters, locations } from "./schema/index.js";
-import type { SeedCharacter } from "./seed-types.js";
+import {
+	characterRelationships,
+	characters,
+	locations,
+} from "./schema/index.js";
 
-const valecendre = {
-	slug: "valecendre",
-	name: "Valecendre",
-	type: "Village",
-	kingdom: "Aldrenia",
-	description: "A village in Aldrenia where Arven Veyr lives with his family.",
-};
+import {
+	loadCharacterRelationships,
+	loadCharacters,
+	loadLocations,
+} from "./seed-loader.js";
 
-const caldrath = {
-	slug: "caldrath",
-	name: "Caldrath",
-	type: "City",
-	kingdom: "Aldrenia",
-	description:
-		"The capital of Aldrenia and one of the most important cities in the kingdom. Caldrath is a major center of trade, politics and commerce.",
-};
+async function seed() {
+	console.log("=================================");
+	console.log(" Wyrdane Narrative - Database Seed");
+	console.log("=================================");
+	console.log();
 
-const arven: SeedCharacter = {
-	slug: "arven-veyr",
-	name: "Arven Veyr",
-	age: 35,
-	race: "Human",
-	kingdom: "Aldrenia",
-	occupation: "Merchant",
-	description:
-		"A pragmatic and hardworking merchant from Valecendre. Arven is patient, observant and sociable, but cautious with strangers. He is a loyal husband and father, a good negotiator, and has no particular interest in politics or violence.",
-};
+	console.log("Chargement des données JSON...");
 
-const familyCharacters: SeedCharacter[] = [
-	{
-		slug: "elira-veyr",
-		name: "Elira Veyr",
-		age: 33,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: "Artisan",
-		description:
-			"Arven's wife. She comes from an artisan family and helps manage the household accounts. Prudent and dependable, she provides stability to the Veyr family.",
-	},
-	{
-		slug: "nolen-veyr",
-		name: "Nolen Veyr",
-		age: 9,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: null,
-		description:
-			"Arven and Elira's son. Curious and energetic, Nolen admires his father and often follows him around the village.",
-	},
-	{
-		slug: "mara-veyr",
-		name: "Mara Veyr",
-		age: 62,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: null,
-		description:
-			"Arven's mother and a widow living in Valecendre. Traditional and direct, Mara has always remained close to her son and his family.",
-	},
-	{
-		slug: "edric-veyr",
-		name: "Edric Veyr",
-		age: 58,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: "Merchant",
-		description:
-			"Arven's paternal uncle. He owns a permanent stall in Caldrath's market and taught Arven much of what he knows about trade.",
-	},
-	{
-		slug: "maela-veyr",
-		name: "Maela Veyr",
-		age: 55,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: "Merchant",
-		description:
-			"Edric's wife, originally from Caldrath. She helps manage the family's accounts and purchases.",
-	},
-	{
-		slug: "tomas-veyr",
-		name: "Tomas Veyr",
-		age: 29,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: "Merchant",
-		description:
-			"Arven's cousin and Edric's son. He works alongside his father in Caldrath and is ambitious about expanding the family business.",
-	},
-	{
-		slug: "lysa-veyr",
-		name: "Lysa Veyr",
-		age: 24,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: "Craftswoman",
-		description:
-			"Arven's cousin and Edric's daughter. She works with the family and has a particular interest in fabrics and crafts.",
-	},
-	{
-		slug: "taren-solmar",
-		name: "Taren Solmar",
-		age: 31,
-		race: "Human",
-		kingdom: "Aldrenia",
-		occupation: "Blacksmith",
-		description:
-			"Elira's brother and Arven's brother-in-law. He works as a blacksmith and has a close relationship with Arven.",
-	},
-];
+	const locationData = await loadLocations();
+	const characterData = await loadCharacters();
+	const relationshipData = await loadCharacterRelationships();
 
-const upsertCharacter = async (
-	character: SeedCharacter,
-	locationId: number | null = null,
-) => {
-	const existing = await db
-		.select()
-		.from(characters)
-		.where(eq(characters.slug, character.slug));
+	console.log(`✓ ${locationData.length} lieu(x) chargé(s)`);
 
-	if (existing.length > 0) {
-		await db
-			.update(characters)
-			.set({
-				...character,
-				locationId,
-			})
-			.where(eq(characters.slug, character.slug));
+	console.log(`✓ ${characterData.length} personnage(s) chargé(s)`);
 
-		console.log(`${character.name} updated.`);
-		return;
+	console.log(`✓ ${relationshipData.length} relation(s) chargée(s)`);
+
+	console.log();
+	console.log("Validation des références...");
+
+	const locationSlugs = new Set(locationData.map((location) => location.slug));
+
+	const characterSlugs = new Set(
+		characterData.map((character) => character.slug),
+	);
+
+	for (const character of characterData) {
+		if (!locationSlugs.has(character.location)) {
+			throw new Error(
+				`Le personnage "${character.slug}" référence le lieu inexistant "${character.location}".`,
+			);
+		}
 	}
 
-	await db.insert(characters).values({
-		...character,
-		locationId,
+	for (const relationship of relationshipData) {
+		if (!characterSlugs.has(relationship.character)) {
+			throw new Error(
+				`Relation invalide : personnage "${relationship.character}" inexistant.`,
+			);
+		}
+
+		if (!characterSlugs.has(relationship.relatedCharacter)) {
+			throw new Error(
+				`Relation invalide : personnage "${relationship.relatedCharacter}" inexistant.`,
+			);
+		}
+	}
+
+	console.log("✓ Toutes les références sont valides");
+	console.log();
+
+	await db.transaction(async (tx) => {
+		console.log("Import des lieux...");
+
+		for (const location of locationData) {
+			await tx
+				.insert(locations)
+				.values({
+					slug: location.slug,
+					name: location.name,
+					type: location.type,
+					kingdom: location.kingdom,
+					population: location.population,
+					description: location.description,
+				})
+				.onDuplicateKeyUpdate({
+					set: {
+						name: location.name,
+						type: location.type,
+						kingdom: location.kingdom,
+						population: location.population,
+						description: location.description,
+					},
+				});
+		}
+
+		console.log(`✓ ${locationData.length} lieu(x) importé(s)`);
+
+		console.log("Import des personnages...");
+
+		const locationRows = await tx.select().from(locations);
+
+		const locationIds = new Map(
+			locationRows.map((location) => [location.slug, location.id]),
+		);
+
+		for (const character of characterData) {
+			const locationId = locationIds.get(character.location);
+
+			if (!locationId) {
+				throw new Error(
+					`Impossible de trouver l'ID du lieu "${character.location}".`,
+				);
+			}
+
+			await tx
+				.insert(characters)
+				.values({
+					slug: character.slug,
+					name: character.name,
+					age: character.age,
+					race: character.race,
+					kingdom: character.kingdom,
+					occupation: character.occupation,
+					locationId,
+					description: character.description,
+				})
+				.onDuplicateKeyUpdate({
+					set: {
+						name: character.name,
+						age: character.age,
+						race: character.race,
+						kingdom: character.kingdom,
+						occupation: character.occupation,
+						locationId,
+						description: character.description,
+					},
+				});
+		}
+
+		console.log(`✓ ${characterData.length} personnage(s) importé(s)`);
+
+		console.log("Import des relations...");
+
+		const characterRows = await tx.select().from(characters);
+
+		const characterIds = new Map(
+			characterRows.map((character) => [character.slug, character.id]),
+		);
+
+		for (const relationship of relationshipData) {
+			const characterId = characterIds.get(relationship.character);
+
+			const relatedCharacterId = characterIds.get(
+				relationship.relatedCharacter,
+			);
+
+			if (!characterId || !relatedCharacterId) {
+				throw new Error(
+					`Impossible de résoudre la relation "${relationship.character}" → "${relationship.relatedCharacter}".`,
+				);
+			}
+			const firstCharacterId = Math.min(characterId, relatedCharacterId);
+
+			const secondCharacterId = Math.max(characterId, relatedCharacterId);
+			await tx
+				.insert(characterRelationships)
+				.values({
+					characterId: firstCharacterId,
+					relatedCharacterId: secondCharacterId,
+					type: relationship.type,
+					score: relationship.score,
+					hasMet: relationship.hasMet,
+					description: relationship.description,
+				})
+				.onDuplicateKeyUpdate({
+					set: {
+						type: relationship.type,
+						score: relationship.score,
+						hasMet: relationship.hasMet,
+						description: relationship.description,
+					},
+				});
+		}
+
+		console.log(`✓ ${relationshipData.length} relation(s) importée(s)`);
 	});
 
-	console.log(`${character.name} created.`);
-};
+	console.log();
+	console.log("=================================");
+	console.log(" ✓ Seed terminé avec succès");
+	console.log("=================================");
+}
 
-const main = async () => {
-	// --------------------------------------------------
-	// Location: Caldrath
-	// --------------------------------------------------
+seed().catch((error) => {
+	console.error();
+	console.error("✗ Échec du seed");
+	console.error();
 
-	let [caldrathLocation] = await db
-		.select()
-		.from(locations)
-		.where(eq(locations.slug, caldrath.slug));
-
-	if (!caldrathLocation) {
-		await db.insert(locations).values(caldrath);
-
-		[caldrathLocation] = await db
-			.select()
-			.from(locations)
-			.where(eq(locations.slug, caldrath.slug));
-
-		if (!caldrathLocation) {
-			throw new Error("Failed to create Caldrath.");
-		}
-
-		console.log("Caldrath created.");
-	} else {
-		console.log("Caldrath already exists.");
-	}
-	// --------------------------------------------------
-	// Location: Valecendre
-	// --------------------------------------------------
-
-	let [location] = await db
-		.select()
-		.from(locations)
-		.where(eq(locations.slug, valecendre.slug));
-
-	if (!location) {
-		await db.insert(locations).values(valecendre);
-
-		[location] = await db
-			.select()
-			.from(locations)
-			.where(eq(locations.slug, valecendre.slug));
-
-		if (!location) {
-			throw new Error("Failed to create Valecendre.");
-		}
-
-		console.log("Valecendre created.");
-	} else {
-		console.log("Valecendre already exists.");
-	}
-
-	// --------------------------------------------------
-	// Characters
-	// --------------------------------------------------
-
-	await upsertCharacter(arven, location.id);
-
-	const caldrathCharacters = new Set([
-		"edric-veyr",
-		"maela-veyr",
-		"tomas-veyr",
-		"lysa-veyr",
-	]);
-
-	for (const character of familyCharacters) {
-		const characterLocation = caldrathCharacters.has(character.slug)
-			? caldrathLocation.id
-			: location.id;
-
-		await upsertCharacter(character, characterLocation);
-	}
-
-	console.log("Seed completed successfully.");
-};
-
-main().catch((error) => {
 	console.error(error);
+
 	process.exit(1);
 });

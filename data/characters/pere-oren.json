@@ -1,0 +1,60 @@
+{
+  "slug": "pere-oren",
+  "name": "Père Oren",
+  "age": 59,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Prêtre d'Aldrene",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Tenue religieuse d'Aldrene"
+  },
+  "personality": {
+    "traits": [
+      "Dévot",
+      "Calme",
+      "Sérieux",
+      "Bienveillant"
+    ],
+    "strengths": [
+      "Religion",
+      "Conseil",
+      "Écoute"
+    ],
+    "weaknesses": [
+      "Traditionalisme",
+      "Foi rigoureuse"
+    ]
+  },
+  "background": "Le Père Oren est le prêtre d'Aldrene de Valecendre. Il joue un rôle religieux important dans la communauté et accompagne les habitants dans leur vie quotidienne.",
+  "possessions": {
+    "home": "valecendre",
+    "placeOfWorship": "Temple d'Aldrene"
+  },
+  "skills": {
+    "religion": "Très élevé",
+    "counseling": "Bon",
+    "lore": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Autorité religieuse",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Le Père Oren est le prêtre d'Aldrene à Valecendre. Il représente la religion d'Aldrene au sein de la communauté."
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "mira-fen",
+  "name": "Mira Fen",
+  "age": 64,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Sage-femme",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements simples et pratiques"
+  },
+  "personality": {
+    "traits": [
+      "Bienveillante",
+      "Patiente",
+      "Calme",
+      "Expérimentée"
+    ],
+    "strengths": [
+      "Médecine traditionnelle",
+      "Accouchement",
+      "Soins"
+    ],
+    "weaknesses": [
+      "Âge",
+      "Mobilité réduite"
+    ]
+  },
+  "background": "Mira Fen est la sage-femme de Valecendre. Elle possède une longue expérience des soins et accompagne les familles du village depuis de nombreuses années.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Maison de soins"
+  },
+  "skills": {
+    "midwifery": "Très élevé",
+    "medicine": "Bon",
+    "healing": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Soignante locale",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Mira Fen est la sage-femme de Valecendre. Elle possède une longue expérience des soins et connaît de nombreuses familles du village."
+}

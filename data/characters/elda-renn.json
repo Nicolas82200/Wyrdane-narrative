@@ -1,0 +1,60 @@
+{
+  "slug": "elda-renn",
+  "name": "Elda Renn",
+  "age": 52,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Herboriste",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements simples et pratiques"
+  },
+  "personality": {
+    "traits": [
+      "Calme",
+      "Observatrice",
+      "Patiente",
+      "Indépendante"
+    ],
+    "strengths": [
+      "Herboristerie",
+      "Connaissance des plantes",
+      "Observation"
+    ],
+    "weaknesses": [
+      "Réservée",
+      "Peu intéressée par la politique"
+    ]
+  },
+  "background": "Elda Renn est l'herboriste de Valecendre. Elle connaît les plantes médicinales et fournit des remèdes aux habitants du village.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Herboristerie"
+  },
+  "skills": {
+    "herbalism": "Très élevé",
+    "medicine": "Bon",
+    "botany": "Très élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Habitante importante",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Elda Renn est l'herboriste de Valecendre. Elle possède une grande connaissance des plantes médicinales et des remèdes traditionnels."
+}

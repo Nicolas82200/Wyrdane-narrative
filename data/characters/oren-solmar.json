@@ -1,0 +1,59 @@
+{
+  "slug": "oren-solmar",
+  "name": "Oren Solmar",
+  "age": 61,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Forgeron",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": "Robuste",
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de travail de forgeron"
+  },
+  "personality": {
+    "traits": [
+      "Travailleur",
+      "Direct",
+      "Fier",
+      "Protecteur"
+    ],
+    "strengths": [
+      "Forge",
+      "Travail manuel",
+      "Endurance"
+    ],
+    "weaknesses": [
+      "Caractère direct",
+      "Entêtement"
+    ]
+  },
+  "background": "Oren Solmar est le père d'Elira et de Taren. Il travaille comme forgeron à Valecendre.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Forge"
+  },
+  "skills": {
+    "blacksmithing": "Très élevé",
+    "metalworking": "Très élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Oren Solmar est le père d'Elira et de Taren. Forgeron à Valecendre, il est habitué au travail physique et possède une forte personnalité."
+}

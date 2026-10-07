@@ -1,0 +1,59 @@
+{
+  "slug": "maela-veyr",
+  "name": "Maela Veyr",
+  "age": 55,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Commerçante",
+  "location": "caldrath",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de commerçante"
+  },
+  "personality": {
+    "traits": [
+      "Organisée",
+      "Prudente",
+      "Pragmatique",
+      "Sociable"
+    ],
+    "strengths": [
+      "Comptabilité",
+      "Achats",
+      "Organisation"
+    ],
+    "weaknesses": [
+      "Prudence"
+    ]
+  },
+  "background": "Maela est l'épouse d'Edric et la tante par alliance d'Arven. Née à Caldrath, elle participe à la gestion des comptes et aux achats du commerce familial.",
+  "possessions": {
+    "home": "caldrath",
+    "business": "Commerce familial"
+  },
+  "skills": {
+    "accounting": "Élevé",
+    "purchasing": "Élevé",
+    "organization": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "caldrath"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "caldrath",
+    "aliveAtStart": true
+  },
+  "description": "Maela Veyr est l'épouse d'Edric. Née à Caldrath, elle participe activement à la gestion du commerce familial."
+}

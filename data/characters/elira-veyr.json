@@ -1,10 +1,61 @@
 {
-	"slug": "",
-	"name": "",
-	"age": ,
-	"race": "",
-	"kingdom": "",
-	"occupation": "",
-	"location": "",
-	"description": ""
+  "slug": "elira-veyr",
+  "name": "Elira Veyr",
+  "age": 33,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Artisane",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements pratiques adaptés au travail artisanal"
+  },
+  "personality": {
+    "traits": [
+      "Prudente",
+      "Stable",
+      "Organisée",
+      "Attentionnée",
+      "Pragmatique"
+    ],
+    "strengths": [
+      "Organisation",
+      "Gestion",
+      "Comptabilité"
+    ],
+    "weaknesses": [
+      "Prudence excessive",
+      "Peut se montrer inquiète face à l'inconnu"
+    ]
+  },
+  "background": "Elira est issue d'une famille d'artisans. Elle a épousé Arven et participe à la gestion de leur activité commerciale, notamment aux comptes et à l'organisation.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Participe à l'activité commerciale d'Arven"
+  },
+  "skills": {
+    "craftsmanship": "Bon",
+    "accounting": "Bon",
+    "organization": "Élevé"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Elira Veyr est l'épouse d'Arven et la mère de Nolen. Prudente et organisée, elle contribue à la stabilité du foyer et à la gestion de l'activité familiale."
 }

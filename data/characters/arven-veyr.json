@@ -1,10 +1,70 @@
 {
-	"slug": "arven-veyr",
-	"name": "Arven Veyr",
-	"age": 35,
-	"race": "Humain",
-	"kingdom": "Aldrenia",
-	"occupation": "Marchand",
-	"location": "valecendre",
-	"description": "Marchand originaire de Valecendre. Pragmatique, travailleur et patient, Arven est observateur et sociable tout en restant prudent avec les inconnus."
+  "slug": "arven-veyr",
+  "name": "Arven Veyr",
+  "age": 35,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Marchand",
+  "location": "valecendre",
+  "appearance": {
+    "height": 178,
+    "build": "Moyenne",
+    "hair": "Bruns foncés",
+    "eyes": "Bruns",
+    "facialHair": "Barbe courte",
+    "clothing": "Vêtements pratiques de marchand"
+  },
+  "personality": {
+    "traits": [
+      "Pragmatique",
+      "Travailleur",
+      "Patient",
+      "Observateur",
+      "Sociable",
+      "Prudent",
+      "Loyal"
+    ],
+    "strengths": [
+      "Négociation",
+      "Observation",
+      "Commerce"
+    ],
+    "weaknesses": [
+      "Méfiance envers les inconnus",
+      "Évite les confrontations physiques",
+      "Prudence excessive"
+    ]
+  },
+  "background": "Arven est né et a grandi à Valecendre. Il est devenu marchand et possède un petit étal dans le village. Son oncle Edric Veyr, marchand à Caldrath, lui a appris une grande partie de ce qu'il sait du commerce. Arven est marié à Elira et père de Nolen. Avant Wyrdane, il mène une vie relativement stable et ordinaire.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Étal de marchand",
+    "vehicle": "Charrette",
+    "mount": "Cheval",
+    "financialStatus": "Confortable sans être riche"
+  },
+  "skills": {
+    "commerce": "Élevé",
+    "negotiation": "Élevé",
+    "observation": "Bon",
+    "horsemanship": "Moyen",
+    "combat": "Faible"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre",
+      "caldrath"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Protagoniste",
+    "importance": "Principale",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Arven Veyr est un marchand humain de trente-cinq ans vivant à Valecendre, dans le royaume d'Aldrenia. Il mène une vie simple auprès de sa femme Elira et de leur fils Nolen. Il n'est ni guerrier ni héros. Lorsque la première vague de Wyrdane frappe le monde en 0 AW, son existence ordinaire bascule brutalement."
 }

@@ -1,9 +1,9 @@
 import {
 	int,
 	mysqlTable,
+	text,
 	timestamp,
 	varchar,
-	text,
 } from "drizzle-orm/mysql-core";
 
 export const locations = mysqlTable("locations", {
@@ -26,6 +26,8 @@ export const locations = mysqlTable("locations", {
 	kingdom: varchar("kingdom", {
 		length: 100,
 	}),
+
+	population: int("population"),
 
 	description: text("description"),
 

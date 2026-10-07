@@ -1,0 +1,60 @@
+{
+  "slug": "ser-aldren-marr",
+  "name": "Ser Aldren Marr",
+  "age": 41,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Garde local",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": "Robuste",
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Équipement de garde"
+  },
+  "personality": {
+    "traits": [
+      "Discipliné",
+      "Vigilant",
+      "Autoritaire",
+      "Protecteur"
+    ],
+    "strengths": [
+      "Combat",
+      "Vigilance",
+      "Autorité"
+    ],
+    "weaknesses": [
+      "Méfiance",
+      "Rigidité"
+    ]
+  },
+  "background": "Ser Aldren Marr est l'un des représentants de la garde locale de Valecendre. Il est chargé de maintenir l'ordre et de protéger les habitants.",
+  "possessions": {
+    "home": "valecendre",
+    "equipment": "Équipement de garde"
+  },
+  "skills": {
+    "combat": "Élevé",
+    "vigilance": "Élevé",
+    "authority": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Autorité locale",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Ser Aldren Marr est un garde local chargé de maintenir l'ordre à Valecendre et de protéger ses habitants."
+}

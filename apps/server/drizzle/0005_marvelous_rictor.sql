@@ -1,0 +1,1 @@
+ALTER TABLE `character_relationships` ADD CONSTRAINT `character_relationship_unique` UNIQUE(`character_id`,`related_character_id`,`type`);

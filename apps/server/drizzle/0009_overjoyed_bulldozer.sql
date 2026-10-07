@@ -1,0 +1,1 @@
+ALTER TABLE `character_relationships` ADD `has_met` boolean DEFAULT false NOT NULL;

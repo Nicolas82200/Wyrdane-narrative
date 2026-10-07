@@ -1,0 +1,58 @@
+{
+  "slug": "bram-kell",
+  "name": "Bram Kell",
+  "age": 48,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Meunier",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": "Robuste",
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements de travail"
+  },
+  "personality": {
+    "traits": [
+      "Travailleur",
+      "Pratique",
+      "Calme",
+      "Fiable"
+    ],
+    "strengths": [
+      "Meunerie",
+      "Travail physique",
+      "Gestion des stocks"
+    ],
+    "weaknesses": [
+      "Peu intéressé par les affaires extérieures"
+    ]
+  },
+  "background": "Bram Kell est le meunier de Valecendre. Son travail est essentiel à l'approvisionnement quotidien du village.",
+  "possessions": {
+    "home": "valecendre",
+    "business": "Moulin"
+  },
+  "skills": {
+    "milling": "Élevé",
+    "stockManagement": "Bon"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Habitant important",
+    "importance": "Secondaire",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Bram Kell est le meunier de Valecendre et joue un rôle essentiel dans l'approvisionnement alimentaire du village."
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "nolen-veyr",
+  "name": "Nolen Veyr",
+  "age": 9,
+  "race": "Humain",
+  "kingdom": "Aldrenia",
+  "occupation": "Enfant",
+  "location": "valecendre",
+  "appearance": {
+    "height": null,
+    "build": null,
+    "hair": null,
+    "eyes": null,
+    "facialHair": null,
+    "clothing": "Vêtements simples d'enfant"
+  },
+  "personality": {
+    "traits": [
+      "Curieux",
+      "Énergique",
+      "Attaché à sa famille",
+      "Admiratif"
+    ],
+    "strengths": [
+      "Curiosité",
+      "Énergie"
+    ],
+    "weaknesses": [
+      "Jeune âge",
+      "Manque d'expérience"
+    ]
+  },
+  "background": "Nolen est le fils d'Arven et d'Elira. Il grandit à Valecendre dans une famille stable et admire profondément son père.",
+  "possessions": {
+    "home": "valecendre"
+  },
+  "skills": {
+    "combat": "Très faible",
+    "commerce": "Débutant"
+  },
+  "knowledge": {
+    "locations": [
+      "valecendre"
+    ],
+    "kingdoms": [
+      "Aldrenia"
+    ]
+  },
+  "narrative": {
+    "role": "Famille du protagoniste",
+    "importance": "Majeure",
+    "startingYear": "0 AW",
+    "startingLocation": "valecendre",
+    "aliveAtStart": true
+  },
+  "description": "Nolen Veyr est le fils de neuf ans d'Arven et d'Elira. Curieux et énergique, il admire son père et mène une enfance ordinaire avant l'arrivée de Wyrdane."
+}
