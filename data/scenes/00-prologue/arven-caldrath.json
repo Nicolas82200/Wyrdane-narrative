@@ -1,0 +1,49 @@
+{
+  "id": "arven-caldrath",
+  "title": "La route vers Caldrath",
+  "description": "Arven prend la direction de Caldrath. La capitale représente une meilleure occasion de vendre ses marchandises, même si cela signifie qu'il rentrera plus tard chez lui.",
+  "location": "caldrath",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Les prix seront meilleurs à Caldrath."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Elira ne va probablement pas apprécier que je rentre encore tard."
+    }
+  ],
+  "choices": [
+    {
+      "id": "vendre-caldrath",
+      "text": "Aller directement au marché.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "money",
+          "value": 25,
+          "operation": "add"
+        }
+      ],
+      "nextScene": "arven-marche-caldrath"
+    },
+    {
+      "id": "rentrer-sans-vendre",
+      "text": "Renoncer au marché et reprendre immédiatement la route de chez lui.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 3,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-maison"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "arven-couronne-discussion",
+  "title": "Quelques nouvelles",
+  "description": "Arven et Neria discutent tranquillement. Il n'y a rien d'inquiétant dans leurs échanges. Les problèmes dont ils parlent sont ceux d'une journée ordinaire : les voyageurs, les prix, les récoltes et les nouvelles du royaume.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "neria-sol"
+  ],
+  "dialogue": [
+    {
+      "speaker": "neria-sol",
+      "text": "Le village n'a pas beaucoup changé pendant ton absence."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "C'est plutôt rassurant."
+    },
+    {
+      "speaker": "neria-sol",
+      "text": "Tu comptes repartir bientôt ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Pas si je peux l'éviter."
+    }
+  ],
+  "choices": [
+    {
+      "id": "fin-discussion-neria",
+      "text": "Prendre congé de Neria.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "relationship",
+          "character": "neria-sol",
+          "value": 1,
+          "operation": "add"
+        },
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 3,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-maison"
+    }
+  ]
+}

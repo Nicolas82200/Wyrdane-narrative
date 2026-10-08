@@ -1,0 +1,31 @@
+{
+  "id": "premiere-vague-tension",
+  "title": "Quelque chose approche",
+  "description": "Arven reprend son chemin. Le silence devient presque oppressant. Puis il ressent une légère vibration sous ses pieds. Il s'arrête. La terre semble bouger.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Qu'est-ce que..."
+    }
+  ],
+  "choices": [
+    {
+      "id": "chercher-abri",
+      "text": "Chercher un endroit où s'abriter.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-tremblement"
+    },
+    {
+      "id": "continuer-maison",
+      "text": "Essayer de rejoindre sa maison.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-tremblement"
+    }
+  ]
+}

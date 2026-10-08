@@ -1,0 +1,48 @@
+{
+  "id": "premiere-vague-obelisques-maison",
+  "title": "Les silhouettes noires",
+  "description": "Au-delà des terres familières, plusieurs obélisques se dressent désormais dans le paysage. Ils semblent avoir émergé du sol en un instant. Leur pierre sombre reflète à peine la lumière. Même à cette distance, leur forme paraît parfaitement régulière.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "elira-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "elira-veyr",
+      "text": "Qu'est-ce que c'est ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je ne sais pas."
+    },
+    {
+      "speaker": "elira-veyr",
+      "text": "Ils étaient là avant ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Non."
+    }
+  ],
+  "choices": [
+    {
+      "id": "fin-vague-maison",
+      "text": "Rester auprès d'Elira et observer le paysage.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_first_wave_home",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "arven_saw_unknown_obelisks",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-fin"
+    }
+  ]
+}

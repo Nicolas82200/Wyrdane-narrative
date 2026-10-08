@@ -1,0 +1,51 @@
+{
+  "id": "arven-valecendre",
+  "title": "Valecendre",
+  "description": "Valecendre apparaît enfin au bout de la route. Le village semble aussi paisible que lorsque Arven l'a quitté. La journée est encore loin d'être terminée.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [],
+  "choices": [
+    {
+      "id": "aller-etal",
+      "text": "Installer mon étal et commencer à vendre.",
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 1,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-etal"
+    },
+    {
+      "id": "aller-auberge",
+      "text": "Passer à l'auberge La Couronne Fendue.",
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 1,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-couronne-fendue"
+    },
+    {
+      "id": "rentrer-maison",
+      "text": "Rentrer directement à la maison.",
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 3,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-maison"
+    }
+  ]
+}

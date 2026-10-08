@@ -1,0 +1,39 @@
+{
+  "id": "premiere-vague-rues-caldrath",
+  "title": "Une ville entourée par l'inconnu",
+  "description": "Dans les rues de Caldrath, le changement est moins immédiatement visible. Les bâtiments sont toujours là, les rues aussi. Mais au-delà des murs et des toits, des arbres inconnus et des formations rocheuses sont désormais visibles. Une brume très légère flotte autour de certaines nouvelles structures.",
+  "location": "caldrath",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Les murs sont toujours là..."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Mais ce qu'il y a derrière eux..."
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-structures-caldrath",
+      "text": "Observer les nouvelles structures.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_saw_unknown_obelisks",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "arven_first_wave_caldrath",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-fin"
+    }
+  ]
+}

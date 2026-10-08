@@ -1,0 +1,28 @@
+{
+  "id": "premiere-vague-vegetation-valecendre",
+  "title": "Une végétation inconnue",
+  "description": "Arven s'approche des nouvelles plantes. Certaines poussent à travers la terre comme si elles y étaient enracinées depuis longtemps. Une mousse sombre recouvre plusieurs pierres. Des lianes fines s'étendent entre les arbres. Rien ne ressemble à une plante qu'Arven ait pu rencontrer lors de ses voyages.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Elles ont l'air d'avoir poussé ici depuis des années."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Mais je les aurais forcément remarquées."
+    }
+  ],
+  "choices": [
+    {
+      "id": "voir-obelisques",
+      "text": "Regarder les formations dressées au loin.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-obelisques-valecendre"
+    }
+  ]
+}

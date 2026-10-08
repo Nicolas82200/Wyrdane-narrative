@@ -1,0 +1,61 @@
+{
+  "id": "arven-marche-caldrath",
+  "title": "Le marché de Caldrath",
+  "description": "Le marché de Caldrath est bien plus animé que celui de Valecendre. Les marchandises d'Arven trouvent facilement preneur et les prix sont effectivement meilleurs.",
+  "location": "caldrath",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Ça valait le déplacement."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Avec un peu de chance, je serai encore chez moi avant la nuit."
+    }
+  ],
+  "choices": [
+    {
+      "id": "rester-caldrath",
+      "text": "Rester encore un peu pour profiter du marché.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "money",
+          "value": 15,
+          "operation": "add"
+        },
+        {
+          "type": "relationship",
+          "character": "elira-veyr",
+          "value": -2,
+          "operation": "add"
+        },
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 2,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-fin-journee"
+    },
+    {
+      "id": "quitter-caldrath",
+      "text": "Quitter Caldrath et rentrer chez lui.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 2,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-fin-journee"
+    }
+  ]
+}

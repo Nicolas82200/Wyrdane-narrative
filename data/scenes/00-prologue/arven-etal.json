@@ -1,0 +1,55 @@
+{
+  "id": "arven-etal",
+  "title": "L'étal",
+  "description": "Arven installe son étal sur une place familière de Valecendre. Il dispose ses marchandises avec soin et attend les premiers clients. La journée commence comme n'importe quelle journée de commerce.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Voilà. Tout est en place."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Voyons si les habitants ont quelque chose à acheter aujourd'hui."
+    }
+  ],
+  "choices": [
+    {
+      "id": "vendre-marchandises",
+      "text": "Passer la journée à vendre.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "money",
+          "value": 12,
+          "operation": "add"
+        }
+      ],
+      "nextScene": "arven-etal-clients"
+    },
+    {
+      "id": "fermer-etal",
+      "text": "Fermer l'étal plus tôt et rentrer chez lui.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 3,
+          "operation": "set"
+        },
+        {
+          "type": "relationship",
+          "character": "elira-veyr",
+          "value": 3,
+          "operation": "add"
+        }
+      ],
+      "nextScene": "arven-maison"
+    }
+  ]
+}

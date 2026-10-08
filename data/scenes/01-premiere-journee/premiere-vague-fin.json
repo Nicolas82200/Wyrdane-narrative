@@ -1,0 +1,16 @@
+{
+  "id": "premiere-vague-fin",
+  "title": "0 AW",
+  "description": "Le monde est silencieux. Le tremblement de terre est terminé aussi brutalement qu'il avait commencé. Arven regarde les nouveaux paysages, la végétation inconnue et les structures qui viennent d'apparaître. Rien de tout cela n'existait quelques instants auparavant. Il ne sait pas ce qui s'est produit. Il ne sait pas encore ce que cela signifie. Mais il sait que le monde qu'il connaissait vient de changer.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Ce n'est plus le même monde."
+    }
+  ],
+  "choices": []
+}

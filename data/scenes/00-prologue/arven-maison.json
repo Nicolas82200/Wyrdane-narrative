@@ -1,0 +1,66 @@
+{
+  "id": "arven-maison",
+  "title": "La maison",
+  "description": "Arven retrouve enfin sa maison. Elira l'attend et la présence familière de sa famille lui rappelle que, malgré les voyages et le commerce, sa véritable vie se trouve ici.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "elira-veyr",
+    "nolen-veyr",
+    "mara-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "elira-veyr",
+      "text": "Te voilà enfin."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Le voyage s'est bien passé."
+    },
+    {
+      "speaker": "elira-veyr",
+      "text": "Tu avais dit que tu rentrerais plus tôt."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je sais. Mais me voilà."
+    }
+  ],
+  "choices": [
+    {
+      "id": "passer-soiree-famille",
+      "text": "Passer la soirée avec sa famille.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "relationship",
+          "character": "elira-veyr",
+          "value": 3,
+          "operation": "add"
+        },
+        {
+          "type": "relationship",
+          "character": "nolen-veyr",
+          "value": 2,
+          "operation": "add"
+        }
+      ],
+      "nextScene": "arven-soiree-famille"
+    },
+    {
+      "id": "parler-elira",
+      "text": "Prendre un moment pour parler seul avec Elira.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "relationship",
+          "character": "elira-veyr",
+          "value": 4,
+          "operation": "add"
+        }
+      ],
+      "nextScene": "arven-conversation-elira"
+    }
+  ]
+}

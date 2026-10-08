@@ -1,0 +1,39 @@
+{
+  "id": "premiere-vague-obelisques-valecendre",
+  "title": "Les obélisques",
+  "description": "Au-delà des champs de Valecendre se dressent plusieurs structures impossibles à ignorer. De grands obélisques sombres émergent du sol. Ils sont hauts et parfaitement immobiles. Leur surface semble faite d'une pierre inconnue, presque noire, parcourue par de fines marques géométriques.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Des obélisques..."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Il n'y avait rien de tout ça ici."
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-obelisques",
+      "text": "Observer les obélisques à distance.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_saw_unknown_obelisks",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "arven_first_wave_valecendre",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-fin"
+    }
+  ]
+}

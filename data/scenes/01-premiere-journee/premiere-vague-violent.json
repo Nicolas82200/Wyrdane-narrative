@@ -1,0 +1,24 @@
+{
+  "id": "premiere-vague-violent",
+  "title": "La terre se déchaîne",
+  "description": "Le tremblement devient encore plus violent. Arven entend le bois craquer et la pierre gronder. Pendant quelques instants, il a l'impression que le sol lui-même est en train de se déchirer sous ses pieds.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Ça ne peut pas continuer..."
+    }
+  ],
+  "choices": [
+    {
+      "id": "tenir-bon",
+      "text": "Tenir bon.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-arret"
+    }
+  ]
+}

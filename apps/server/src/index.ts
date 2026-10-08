@@ -1,31 +1,40 @@
+import "dotenv/config";
+
 import Fastify from "fastify";
 import cors from "@fastify/cors";
 
-const server = Fastify({
-  logger: true
+import scenesRoutes from "./routes/scenes.js";
+
+const app = Fastify({
+	logger: true,
 });
 
-await server.register(cors, {
-  origin: true
+await app.register(cors, {
+	origin: true,
 });
 
-server.get("/api/health", async () => {
-  return {
-    status: "ok",
-    game: "Wyrdane Narrative"
-  };
+await app.register(scenesRoutes, {
+	prefix: "/api",
 });
 
-const start = async () => {
-  try {
-    await server.listen({
-      port: 3000,
-      host: "0.0.0.0"
-    });
-  } catch (error) {
-    server.log.error(error);
-    process.exit(1);
-  }
-};
+app.get("/api/health", async () => {
+	return {
+		status: "ok",
+	};
+});
 
-start();
+const port = Number(process.env.PORT ?? 3000);
+
+const host = process.env.HOST ?? "0.0.0.0";
+
+try {
+	await app.listen({
+		port,
+		host,
+	});
+
+	console.log(`Wyrdane server listening on http://localhost:${port}`);
+} catch (error) {
+	app.log.error(error);
+	process.exit(1);
+}

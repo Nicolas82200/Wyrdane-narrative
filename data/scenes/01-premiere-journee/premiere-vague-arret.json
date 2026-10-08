@@ -1,0 +1,34 @@
+{
+  "id": "premiere-vague-arret",
+  "title": "L'arrêt",
+  "description": "Puis tout s'arrête. Instantanément. Le sol cesse de trembler. Le grondement disparaît. Aucun mouvement résiduel ne suit. Après la violence du séisme, le silence paraît presque irréel.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "..."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "C'est terminé ?"
+    }
+  ],
+  "choices": [
+    {
+      "id": "regarder-autour",
+      "text": "Regarder autour de soi.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_witnessed_wyrdane_wave",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-apparition"
+    }
+  ]
+}

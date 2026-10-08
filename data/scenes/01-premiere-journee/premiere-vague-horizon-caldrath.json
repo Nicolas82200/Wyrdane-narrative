@@ -1,0 +1,39 @@
+{
+  "id": "premiere-vague-horizon-caldrath",
+  "title": "Au-delà de Caldrath",
+  "description": "Au-delà de la capitale apparaissent des formations rocheuses qui semblent impossibles à cette distance. De larges falaises se dressent là où Arven ne connaît que des terres ouvertes. Plus loin, plusieurs silhouettes verticales dominent l'horizon. Elles ressemblent à des obélisques gigantesques.",
+  "location": "caldrath",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Des montagnes ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Non... elles n'étaient pas là."
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-obelisques-caldrath",
+      "text": "Observer les immenses structures à l'horizon.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_saw_unknown_obelisks",
+          "value": true
+        },
+        {
+          "type": "flag",
+          "key": "arven_first_wave_caldrath",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-fin"
+    }
+  ]
+}

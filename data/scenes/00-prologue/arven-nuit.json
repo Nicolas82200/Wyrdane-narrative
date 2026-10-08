@@ -1,0 +1,24 @@
+{
+  "id": "arven-nuit",
+  "title": "Avant que tout change",
+  "description": "La nuit commence à tomber. Arven pense simplement à la journée qui vient de s'écouler. Rien ne laisse présager que le monde s'apprête à changer.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Demain, il faudra probablement recommencer."
+    }
+  ],
+  "choices": [
+    {
+      "id": "fin-prologue",
+      "text": "Continuer.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague"
+    }
+  ]
+}
