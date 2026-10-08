@@ -1,0 +1,73 @@
+{
+  "id": "arven-fin-journee",
+  "title": "La fin de la journée",
+  "description": "La journée touche à sa fin. Selon l'endroit où il se trouve, Arven se prépare à rentrer chez lui ou termine simplement ce qu'il lui reste à faire. Le monde autour de lui est encore parfaitement normal.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Une journée comme les autres."
+    }
+  ],
+  "choices": [
+    {
+      "id": "terminer-journee",
+      "text": "Rentrer chez lui et terminer la journée.",
+      "conditions": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "operator": "equals",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 1,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-nuit"
+    },
+    {
+      "id": "terminer-journee-caldrath",
+      "text": "Quitter Caldrath et commencer à rentrer.",
+      "conditions": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "operator": "equals",
+          "value": 2
+        }
+      ],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 2,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-nuit"
+    },
+    {
+      "id": "terminer-journee-maison",
+      "text": "Terminer la soirée chez lui.",
+      "conditions": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "operator": "equals",
+          "value": 3
+        }
+      ],
+      "effects": [],
+      "nextScene": "arven-nuit"
+    }
+  ]
+}

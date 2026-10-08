@@ -1,0 +1,30 @@
+{
+  "id": "premiere-vague-tremblement",
+  "title": "Le tremblement",
+  "description": "Le sol se met brutalement à trembler. En quelques secondes, les vibrations deviennent extrêmement violentes. Arven peine à rester debout tandis que les bâtiments et les arbres autour de lui sont secoués avec une force terrifiante.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Un tremblement de terre !"
+    }
+  ],
+  "choices": [
+    {
+      "id": "s-abriter",
+      "text": "S'accrocher et attendre que le tremblement passe.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_survived_tremor",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-violent"
+    }
+  ]
+}

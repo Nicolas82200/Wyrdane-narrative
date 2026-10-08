@@ -1,0 +1,54 @@
+{
+  "id": "premiere-vague-maison",
+  "title": "Autour de la maison",
+  "description": "Arven est avec sa famille lorsque le tremblement s'arrête. Lorsqu'il regarde par la fenêtre, il reconnaît encore Valecendre, mais le paysage autour de leur maison a changé. Des plantes inconnues couvrent désormais certaines zones du terrain. Plus loin, plusieurs structures sombres se dressent au milieu des terres.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "elira-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "elira-veyr",
+      "text": "Arven..."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je suis là."
+    },
+    {
+      "speaker": "elira-veyr",
+      "text": "Qu'est-ce qui vient de se passer ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je ne sais pas."
+    },
+    {
+      "speaker": "elira-veyr",
+      "text": "Regarde dehors."
+    }
+  ],
+  "choices": [
+    {
+      "id": "regarder-vegetation-maison",
+      "text": "Observer la végétation apparue autour de la maison.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_examined_new_vegetation",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-vegetation-maison"
+    },
+    {
+      "id": "regarder-obelisques-maison",
+      "text": "Regarder les grandes structures au loin.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-obelisques-maison"
+    }
+  ]
+}

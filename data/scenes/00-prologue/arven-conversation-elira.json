@@ -1,0 +1,51 @@
+{
+  "id": "arven-conversation-elira",
+  "title": "Avec Elira",
+  "description": "Arven profite d'un moment plus calme avec Elira. Ils parlent de la maison, du commerce et de la possibilité pour Arven de rester un peu plus longtemps à Valecendre.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "elira-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "elira-veyr",
+      "text": "Tu repars bientôt ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je ne sais pas encore."
+    },
+    {
+      "speaker": "elira-veyr",
+      "text": "J'aimerais simplement que tu sois là plus souvent."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je vais essayer."
+    }
+  ],
+  "choices": [
+    {
+      "id": "promettre-rester",
+      "text": "Promettre d'essayer de rester davantage à Valecendre.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "relationship",
+          "character": "elira-veyr",
+          "value": 3,
+          "operation": "add"
+        }
+      ],
+      "nextScene": "arven-soiree-famille"
+    },
+    {
+      "id": "rester-vague",
+      "text": "Éviter de faire une promesse.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "arven-soiree-famille"
+    }
+  ]
+}

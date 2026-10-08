@@ -1,0 +1,24 @@
+{
+  "id": "premiere-vague",
+  "title": "Le chemin du retour",
+  "description": "La journée touche à sa fin. Arven reprend le chemin de chez lui. Le village, la route et les terres environnantes lui sont parfaitement familiers. Il ne se doute pas encore que cette journée ordinaire touche à sa fin.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Il est temps de rentrer."
+    }
+  ],
+  "choices": [
+    {
+      "id": "continuer-retour",
+      "text": "Continuer son chemin.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-silence"
+    }
+  ]
+}

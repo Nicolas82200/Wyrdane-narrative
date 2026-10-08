@@ -1,0 +1,34 @@
+{
+  "id": "premiere-vague-apparition",
+  "title": "Quelque chose a changé",
+  "description": "Arven relève la tête. Le paysage familier est toujours là, mais il n'est plus seul. À travers les arbres, les champs et les bâtiments qu'il connaît, des formes nouvelles apparaissent. Certaines semblent être des plantes. D'autres ressemblent à des pierres dressées ou à des constructions.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Qu'est-ce que c'est ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Ce n'était pas là."
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-nouveaux-lieux",
+      "text": "Observer attentivement les environs.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_saw_new_landscape",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-position"
+    }
+  ]
+}

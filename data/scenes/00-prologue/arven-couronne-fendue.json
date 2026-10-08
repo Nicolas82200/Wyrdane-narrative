@@ -1,0 +1,64 @@
+{
+  "id": "arven-couronne-fendue",
+  "title": "La Couronne Fendue",
+  "description": "La Couronne Fendue est déjà animée. Neria connaît Arven depuis suffisamment longtemps pour ne pas s'étonner de le voir passer après un voyage. L'ambiance est familière et tranquille.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "neria-sol"
+  ],
+  "dialogue": [
+    {
+      "speaker": "neria-sol",
+      "text": "Arven ! Tu es enfin revenu."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Et entier, en plus."
+    },
+    {
+      "speaker": "neria-sol",
+      "text": "Alors, Thelmere ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Toujours aussi loin. Mais le voyage s'est bien passé."
+    }
+  ],
+  "choices": [
+    {
+      "id": "rester-avec-neria",
+      "text": "Rester un moment pour discuter.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "relationship",
+          "character": "neria-sol",
+          "value": 2,
+          "operation": "add"
+        }
+      ],
+      "nextScene": "arven-couronne-discussion"
+    },
+    {
+      "id": "rentrer-apres-neria",
+      "text": "Prendre congé et rentrer chez lui.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "relationship",
+          "character": "elira-veyr",
+          "value": 1,
+          "operation": "add"
+        },
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 3,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-maison"
+    }
+  ]
+}

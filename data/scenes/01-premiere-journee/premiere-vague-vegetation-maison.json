@@ -1,0 +1,43 @@
+{
+  "id": "premiere-vague-vegetation-maison",
+  "title": "Des plantes inconnues",
+  "description": "À quelques mètres de la maison, une végétation inconnue a poussé au milieu du terrain. Certaines plantes ont des feuilles longues et pâles. D'autres possèdent des tiges sombres couvertes de petites excroissances. Elles semblent parfaitement vivantes, comme si elles avaient toujours appartenu à cet endroit.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "elira-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "elira-veyr",
+      "text": "Tu as déjà vu ces plantes ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Jamais."
+    },
+    {
+      "speaker": "elira-veyr",
+      "text": "Alors d'où viennent-elles ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je n'en sais rien."
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-obelisques-maison",
+      "text": "Regarder les structures sombres au loin.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_first_wave_home",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-obelisques-maison"
+    }
+  ]
+}

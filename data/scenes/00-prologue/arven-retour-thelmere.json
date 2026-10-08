@@ -1,0 +1,47 @@
+{
+  "id": "arven-retour-thelmere",
+  "title": "Le retour",
+  "description": "Après plusieurs jours passés sur les routes, Arven Veyr approche enfin d'Aldrenia. Ses marchandises ont voyagé avec lui depuis Thelmere et il songe déjà à la meilleure manière de les vendre. Pour lui, cette journée n'est qu'une journée de commerce comme les autres.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Enfin de retour."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Voyons ce que je peux tirer de ces marchandises."
+    }
+  ],
+  "choices": [
+    {
+      "id": "aller-valecendre",
+      "text": "Retourner à Valecendre pour vendre mes marchandises.",
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 1,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-valecendre"
+    },
+    {
+      "id": "aller-caldrath",
+      "text": "Continuer jusqu'à Caldrath. Les prix y seront meilleurs.",
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 2,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-caldrath"
+    }
+  ]
+}

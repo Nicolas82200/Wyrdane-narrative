@@ -1,0 +1,47 @@
+{
+  "id": "premiere-vague-silence",
+  "title": "Le silence",
+  "description": "Quelque chose change sans qu'Arven sache immédiatement quoi. Il ralentit. La route est étrangement calme. Puis il comprend ce qui le dérange : les animaux ont cessé de faire le moindre bruit.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Attends..."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Pourquoi est-ce que tout est silencieux ?"
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-silence",
+      "text": "S'arrêter et observer les alentours.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_noticed_the_silence",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-animaux"
+    },
+    {
+      "id": "continuer-silence",
+      "text": "Continuer malgré le silence.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_ignored_the_silence",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-animaux"
+    }
+  ]
+}

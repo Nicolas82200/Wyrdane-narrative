@@ -1,0 +1,39 @@
+{
+  "id": "arven-soiree-famille",
+  "title": "Une soirée ordinaire",
+  "description": "La soirée se déroule paisiblement. La maison est remplie de conversations simples et de petits bruits familiers. Pour Arven, ce moment ressemble à des centaines d'autres soirées.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "elira-veyr",
+    "nolen-veyr",
+    "mara-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "nolen-veyr",
+      "text": "Papa, tu as vendu beaucoup de choses aujourd'hui ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Assez pour que ton père soit content."
+    },
+    {
+      "speaker": "mara-veyr",
+      "text": "Alors profitez de votre soirée."
+    },
+    {
+      "speaker": "elira-veyr",
+      "text": "Demain sera une autre journée."
+    }
+  ],
+  "choices": [
+    {
+      "id": "fin-soiree",
+      "text": "Terminer la soirée et aller se coucher.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "arven-fin-journee"
+    }
+  ]
+}

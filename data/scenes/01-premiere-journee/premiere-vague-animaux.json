@@ -1,0 +1,48 @@
+{
+  "id": "premiere-vague-animaux",
+  "title": "Les animaux se taisent",
+  "description": "Les oiseaux sont silencieux. Les chiens ne donnent plus de voix. Les chevaux eux-mêmes semblent figés. Arven observe les animaux autour de lui : ils ne fuient pas, ne s'agitent pas et ne produisent aucun son.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Même les chiens..."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Qu'est-ce qui leur arrive ?"
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-animaux",
+      "text": "Observer attentivement les animaux.",
+      "conditions": [
+        {
+          "type": "flag",
+          "key": "arven_noticed_the_silence",
+          "operator": "equals",
+          "value": true
+        }
+      ],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_observed_silent_animals",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-tension"
+    },
+    {
+      "id": "ne-pas-s-attarder",
+      "text": "Ne pas s'attarder et rentrer chez lui.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-tension"
+    }
+  ]
+}

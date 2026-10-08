@@ -1,0 +1,685 @@
+[
+	{
+		"id": "arven-retour-thelmere",
+		"title": "Le retour",
+		"description": "Après plusieurs jours passés sur les routes, Arven Veyr approche enfin d'Aldrenia. Ses marchandises ont voyagé avec lui depuis Thelmere et il songe déjà à la meilleure manière de les vendre. Pour lui, cette journée n'est qu'une journée de commerce comme les autres.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Enfin de retour."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Voyons ce que je peux tirer de ces marchandises."
+			}
+		],
+		"choices": [
+			{
+				"id": "aller-valecendre",
+				"text": "Retourner à Valecendre pour vendre mes marchandises.",
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 1,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-valecendre"
+			},
+			{
+				"id": "aller-caldrath",
+				"text": "Continuer jusqu'à Caldrath. Les prix y seront meilleurs.",
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 2,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-caldrath"
+			}
+		]
+	},
+	{
+		"id": "arven-valecendre",
+		"title": "Valecendre",
+		"description": "Valecendre apparaît enfin au bout de la route. Le village semble aussi paisible que lorsque Arven l'a quitté. La journée est encore loin d'être terminée.",
+		"location": "valecendre",
+		"characters": ["arven-veyr"],
+		"dialogue": [],
+		"choices": [
+			{
+				"id": "aller-etal",
+				"text": "Installer mon étal et commencer à vendre.",
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 1,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-etal"
+			},
+			{
+				"id": "aller-auberge",
+				"text": "Passer à l'auberge La Couronne Fendue.",
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 1,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-couronne-fendue"
+			},
+			{
+				"id": "rentrer-maison",
+				"text": "Rentrer directement à la maison.",
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 3,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-maison"
+			}
+		]
+	},
+	{
+		"id": "arven-etal",
+		"title": "L'étal",
+		"description": "Arven installe son étal sur une place familière de Valecendre. Il dispose ses marchandises avec soin et attend les premiers clients. La journée commence comme n'importe quelle journée de commerce.",
+		"location": "valecendre",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Voilà. Tout est en place."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Voyons si les habitants ont quelque chose à acheter aujourd'hui."
+			}
+		],
+		"choices": [
+			{
+				"id": "vendre-marchandises",
+				"text": "Passer la journée à vendre.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "money",
+						"value": 12,
+						"operation": "add"
+					}
+				],
+				"nextScene": "arven-etal-clients"
+			},
+			{
+				"id": "fermer-etal",
+				"text": "Fermer l'étal plus tôt et rentrer chez lui.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 3,
+						"operation": "set"
+					},
+					{
+						"type": "relationship",
+						"character": "elira-veyr",
+						"value": 3,
+						"operation": "add"
+					}
+				],
+				"nextScene": "arven-maison"
+			}
+		]
+	},
+	{
+		"id": "arven-etal-clients",
+		"title": "Une journée de commerce",
+		"description": "Les habitants viennent progressivement voir les marchandises d'Arven. Certains achètent, d'autres discutent simplement quelques minutes. Rien d'inhabituel ne vient troubler la journée.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "elda-renn", "bram-kell"],
+		"dialogue": [
+			{
+				"speaker": "elda-renn",
+				"text": "Alors Arven, encore de retour avec des marchandises de Thelmere ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Comme toujours. Il faut bien continuer à gagner sa vie."
+			},
+			{
+				"speaker": "bram-kell",
+				"text": "Tu devrais rester un peu plus longtemps au village cette fois."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je vais essayer."
+			}
+		],
+		"choices": [
+			{
+				"id": "fin-journee-etal",
+				"text": "Ranger l'étal lorsque la journée touche à sa fin.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 1,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-fin-journee"
+			},
+			{
+				"id": "passer-chez-neria-apres-etal",
+				"text": "Passer voir Neria avant de rentrer.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_visited_neria",
+						"value": true
+					},
+					{
+						"type": "relationship",
+						"character": "neria-sol",
+						"value": 2,
+						"operation": "add"
+					},
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 1,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-couronne-fendue"
+			},
+			{
+				"id": "rentrer-apres-etal",
+				"text": "Rentrer directement chez lui.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "relationship",
+						"character": "elira-veyr",
+						"value": 3,
+						"operation": "add"
+					},
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 3,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-maison"
+			}
+		]
+	},
+	{
+		"id": "arven-couronne-fendue",
+		"title": "La Couronne Fendue",
+		"description": "La Couronne Fendue est déjà animée. Neria connaît Arven depuis suffisamment longtemps pour ne pas s'étonner de le voir passer après un voyage. L'ambiance est familière et tranquille.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "neria-sol"],
+		"dialogue": [
+			{
+				"speaker": "neria-sol",
+				"text": "Arven ! Tu es enfin revenu."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Et entier, en plus."
+			},
+			{
+				"speaker": "neria-sol",
+				"text": "Alors, Thelmere ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Toujours aussi loin. Mais le voyage s'est bien passé."
+			}
+		],
+		"choices": [
+			{
+				"id": "rester-avec-neria",
+				"text": "Rester un moment pour discuter.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "relationship",
+						"character": "neria-sol",
+						"value": 2,
+						"operation": "add"
+					}
+				],
+				"nextScene": "arven-couronne-discussion"
+			},
+			{
+				"id": "rentrer-apres-neria",
+				"text": "Prendre congé et rentrer chez lui.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "relationship",
+						"character": "elira-veyr",
+						"value": 1,
+						"operation": "add"
+					},
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 3,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-maison"
+			}
+		]
+	},
+	{
+		"id": "arven-couronne-discussion",
+		"title": "Quelques nouvelles",
+		"description": "Arven et Neria discutent tranquillement. Il n'y a rien d'inquiétant dans leurs échanges. Les problèmes dont ils parlent sont ceux d'une journée ordinaire : les voyageurs, les prix, les récoltes et les nouvelles du royaume.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "neria-sol"],
+		"dialogue": [
+			{
+				"speaker": "neria-sol",
+				"text": "Le village n'a pas beaucoup changé pendant ton absence."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "C'est plutôt rassurant."
+			},
+			{
+				"speaker": "neria-sol",
+				"text": "Tu comptes repartir bientôt ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Pas si je peux l'éviter."
+			}
+		],
+		"choices": [
+			{
+				"id": "fin-discussion-neria",
+				"text": "Prendre congé de Neria.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "relationship",
+						"character": "neria-sol",
+						"value": 1,
+						"operation": "add"
+					},
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 3,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-maison"
+			}
+		]
+	},
+	{
+		"id": "arven-caldrath",
+		"title": "La route vers Caldrath",
+		"description": "Arven prend la direction de Caldrath. La capitale représente une meilleure occasion de vendre ses marchandises, même si cela signifie qu'il rentrera plus tard chez lui.",
+		"location": "caldrath",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Les prix seront meilleurs à Caldrath."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Elira ne va probablement pas apprécier que je rentre encore tard."
+			}
+		],
+		"choices": [
+			{
+				"id": "vendre-caldrath",
+				"text": "Aller directement au marché.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "money",
+						"value": 25,
+						"operation": "add"
+					}
+				],
+				"nextScene": "arven-marche-caldrath"
+			},
+			{
+				"id": "rentrer-sans-vendre",
+				"text": "Renoncer au marché et reprendre immédiatement la route de chez lui.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 3,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-maison"
+			}
+		]
+	},
+	{
+		"id": "arven-marche-caldrath",
+		"title": "Le marché de Caldrath",
+		"description": "Le marché de Caldrath est bien plus animé que celui de Valecendre. Les marchandises d'Arven trouvent facilement preneur et les prix sont effectivement meilleurs.",
+		"location": "caldrath",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Ça valait le déplacement."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Avec un peu de chance, je serai encore chez moi avant la nuit."
+			}
+		],
+		"choices": [
+			{
+				"id": "rester-caldrath",
+				"text": "Rester encore un peu pour profiter du marché.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "money",
+						"value": 15,
+						"operation": "add"
+					},
+					{
+						"type": "relationship",
+						"character": "elira-veyr",
+						"value": -2,
+						"operation": "add"
+					},
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 2,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-fin-journee"
+			},
+			{
+				"id": "quitter-caldrath",
+				"text": "Quitter Caldrath et rentrer chez lui.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 2,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-fin-journee"
+			}
+		]
+	},
+	{
+		"id": "arven-maison",
+		"title": "La maison",
+		"description": "Arven retrouve enfin sa maison. Elira l'attend et la présence familière de sa famille lui rappelle que, malgré les voyages et le commerce, sa véritable vie se trouve ici.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "elira-veyr", "nolen-veyr", "mara-veyr"],
+		"dialogue": [
+			{
+				"speaker": "elira-veyr",
+				"text": "Te voilà enfin."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Le voyage s'est bien passé."
+			},
+			{
+				"speaker": "elira-veyr",
+				"text": "Tu avais dit que tu rentrerais plus tôt."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je sais. Mais me voilà."
+			}
+		],
+		"choices": [
+			{
+				"id": "passer-soiree-famille",
+				"text": "Passer la soirée avec sa famille.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "relationship",
+						"character": "elira-veyr",
+						"value": 3,
+						"operation": "add"
+					},
+					{
+						"type": "relationship",
+						"character": "nolen-veyr",
+						"value": 2,
+						"operation": "add"
+					}
+				],
+				"nextScene": "arven-soiree-famille"
+			},
+			{
+				"id": "parler-elira",
+				"text": "Prendre un moment pour parler seul avec Elira.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "relationship",
+						"character": "elira-veyr",
+						"value": 4,
+						"operation": "add"
+					}
+				],
+				"nextScene": "arven-conversation-elira"
+			}
+		]
+	},
+	{
+		"id": "arven-conversation-elira",
+		"title": "Avec Elira",
+		"description": "Arven profite d'un moment plus calme avec Elira. Ils parlent de la maison, du commerce et de la possibilité pour Arven de rester un peu plus longtemps à Valecendre.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "elira-veyr"],
+		"dialogue": [
+			{
+				"speaker": "elira-veyr",
+				"text": "Tu repars bientôt ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je ne sais pas encore."
+			},
+			{
+				"speaker": "elira-veyr",
+				"text": "J'aimerais simplement que tu sois là plus souvent."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je vais essayer."
+			}
+		],
+		"choices": [
+			{
+				"id": "promettre-rester",
+				"text": "Promettre d'essayer de rester davantage à Valecendre.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "relationship",
+						"character": "elira-veyr",
+						"value": 3,
+						"operation": "add"
+					}
+				],
+				"nextScene": "arven-soiree-famille"
+			},
+			{
+				"id": "rester-vague",
+				"text": "Éviter de faire une promesse.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "arven-soiree-famille"
+			}
+		]
+	},
+	{
+		"id": "arven-soiree-famille",
+		"title": "Une soirée ordinaire",
+		"description": "La soirée se déroule paisiblement. La maison est remplie de conversations simples et de petits bruits familiers. Pour Arven, ce moment ressemble à des centaines d'autres soirées.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "elira-veyr", "nolen-veyr", "mara-veyr"],
+		"dialogue": [
+			{
+				"speaker": "nolen-veyr",
+				"text": "Papa, tu as vendu beaucoup de choses aujourd'hui ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Assez pour que ton père soit content."
+			},
+			{
+				"speaker": "mara-veyr",
+				"text": "Alors profitez de votre soirée."
+			},
+			{
+				"speaker": "elira-veyr",
+				"text": "Demain sera une autre journée."
+			}
+		],
+		"choices": [
+			{
+				"id": "fin-soiree",
+				"text": "Terminer la soirée et aller se coucher.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "arven-fin-journee"
+			}
+		]
+	},
+	{
+		"id": "arven-fin-journee",
+		"title": "La fin de la journée",
+		"description": "La journée touche à sa fin. Selon l'endroit où il se trouve, Arven se prépare à rentrer chez lui ou termine simplement ce qu'il lui reste à faire. Le monde autour de lui est encore parfaitement normal.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Une journée comme les autres."
+			}
+		],
+		"choices": [
+			{
+				"id": "terminer-journee",
+				"text": "Rentrer chez lui et terminer la journée.",
+				"conditions": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"operator": "equals",
+						"value": 1
+					}
+				],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 1,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-nuit"
+			},
+			{
+				"id": "terminer-journee-caldrath",
+				"text": "Quitter Caldrath et commencer à rentrer.",
+				"conditions": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"operator": "equals",
+						"value": 2
+					}
+				],
+				"effects": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"value": 2,
+						"operation": "set"
+					}
+				],
+				"nextScene": "arven-nuit"
+			},
+			{
+				"id": "terminer-journee-maison",
+				"text": "Terminer la soirée chez lui.",
+				"conditions": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"operator": "equals",
+						"value": 3
+					}
+				],
+				"effects": [],
+				"nextScene": "arven-nuit"
+			}
+		]
+	},
+	{
+		"id": "arven-nuit",
+		"title": "Avant que tout change",
+		"description": "La nuit commence à tomber. Arven pense simplement à la journée qui vient de s'écouler. Rien ne laisse présager que le monde s'apprête à changer.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Demain, il faudra probablement recommencer."
+			}
+		],
+		"choices": [
+			{
+				"id": "fin-prologue",
+				"text": "Continuer.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague"
+			}
+		]
+	}
+]

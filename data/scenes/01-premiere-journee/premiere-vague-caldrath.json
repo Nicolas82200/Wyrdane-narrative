@@ -1,0 +1,35 @@
+{
+  "id": "premiere-vague-caldrath",
+  "title": "Caldrath transformée",
+  "description": "Depuis Caldrath, le changement paraît encore plus immense. La capitale est toujours là, ses murailles et ses bâtiments n'ont pas disparu, mais l'horizon a changé. Au-delà des terres connues s'étendent désormais des reliefs inconnus et des formations gigantesques qui n'existaient pas quelques instants auparavant.",
+  "location": "caldrath",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Ce n'est pas possible."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Qu'est-ce qui est apparu autour de la ville ?"
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-horizon-caldrath",
+      "text": "Regarder l'horizon.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-horizon-caldrath"
+    },
+    {
+      "id": "observer-rues-caldrath",
+      "text": "Regarder les rues et les bâtiments autour de soi.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-rues-caldrath"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "premiere-vague-position",
+  "title": "Un paysage impossible",
+  "description": "Arven tente de comprendre ce qu'il voit. Les choses qui viennent d'apparaître semblent appartenir à un autre endroit. Certaines formations paraissent naturelles, tandis que d'autres semblent avoir été construites par quelqu'un. Pourtant, rien ne permet de comprendre comment elles ont pu apparaître ici.",
+  "location": null,
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Je ne comprends pas."
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-valecendre",
+      "text": "Observer les environs de Valecendre.",
+      "conditions": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "operator": "equals",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "nextScene": "premiere-vague-valecendre"
+    },
+    {
+      "id": "observer-caldrath",
+      "text": "Observer les environs de Caldrath.",
+      "conditions": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "operator": "equals",
+          "value": 2
+        }
+      ],
+      "effects": [],
+      "nextScene": "premiere-vague-caldrath"
+    },
+    {
+      "id": "observer-maison",
+      "text": "Regarder ce qui entoure sa maison.",
+      "conditions": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "operator": "equals",
+          "value": 3
+        }
+      ],
+      "effects": [],
+      "nextScene": "premiere-vague-maison"
+    }
+  ]
+}

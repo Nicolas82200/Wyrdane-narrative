@@ -1,0 +1,41 @@
+{
+  "id": "premiere-vague-valecendre",
+  "title": "Valecendre n'est plus seule",
+  "description": "Arven reconnaît les maisons et les champs de Valecendre. Pourtant, quelque chose s'est ajouté au paysage. Une végétation inconnue pousse désormais entre les champs et au bord des chemins. Certaines plantes ont de longues tiges pâles couvertes de feuilles presque translucides. D'autres forment de larges buissons aux feuilles sombres et épaisses, comme si elles avaient poussé là depuis des années.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr"
+  ],
+  "dialogue": [
+    {
+      "speaker": "arven-veyr",
+      "text": "Ces plantes..."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je ne les ai jamais vues."
+    }
+  ],
+  "choices": [
+    {
+      "id": "observer-obelisque-valecendre",
+      "text": "Regarder les grandes pierres dressées au loin.",
+      "conditions": [],
+      "effects": [],
+      "nextScene": "premiere-vague-obelisques-valecendre"
+    },
+    {
+      "id": "observer-vegetation-valecendre",
+      "text": "S'approcher de la végétation inconnue.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_examined_new_vegetation",
+          "value": true
+        }
+      ],
+      "nextScene": "premiere-vague-vegetation-valecendre"
+    }
+  ]
+}

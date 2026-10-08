@@ -3,8 +3,8 @@ import {
 	int,
 	mysqlTable,
 	timestamp,
-	varchar,
 	uniqueIndex,
+	varchar,
 } from "drizzle-orm/mysql-core";
 
 import { characters } from "./characters.js";

@@ -1,0 +1,90 @@
+{
+  "id": "arven-etal-clients",
+  "title": "Une journée de commerce",
+  "description": "Les habitants viennent progressivement voir les marchandises d'Arven. Certains achètent, d'autres discutent simplement quelques minutes. Rien d'inhabituel ne vient troubler la journée.",
+  "location": "valecendre",
+  "characters": [
+    "arven-veyr",
+    "elda-renn",
+    "bram-kell"
+  ],
+  "dialogue": [
+    {
+      "speaker": "elda-renn",
+      "text": "Alors Arven, encore de retour avec des marchandises de Thelmere ?"
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Comme toujours. Il faut bien continuer à gagner sa vie."
+    },
+    {
+      "speaker": "bram-kell",
+      "text": "Tu devrais rester un peu plus longtemps au village cette fois."
+    },
+    {
+      "speaker": "arven-veyr",
+      "text": "Je vais essayer."
+    }
+  ],
+  "choices": [
+    {
+      "id": "fin-journee-etal",
+      "text": "Ranger l'étal lorsque la journée touche à sa fin.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 1,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-fin-journee"
+    },
+    {
+      "id": "passer-chez-neria-apres-etal",
+      "text": "Passer voir Neria avant de rentrer.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "flag",
+          "key": "arven_visited_neria",
+          "value": true
+        },
+        {
+          "type": "relationship",
+          "character": "neria-sol",
+          "value": 2,
+          "operation": "add"
+        },
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 1,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-couronne-fendue"
+    },
+    {
+      "id": "rentrer-apres-etal",
+      "text": "Rentrer directement chez lui.",
+      "conditions": [],
+      "effects": [
+        {
+          "type": "relationship",
+          "character": "elira-veyr",
+          "value": 3,
+          "operation": "add"
+        },
+        {
+          "type": "variable",
+          "key": "arven_end_day_location",
+          "value": 3,
+          "operation": "set"
+        }
+      ],
+      "nextScene": "arven-maison"
+    }
+  ]
+}

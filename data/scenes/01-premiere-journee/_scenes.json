@@ -1,0 +1,674 @@
+[
+	{
+		"id": "premiere-vague",
+		"title": "Le chemin du retour",
+		"description": "La journée touche à sa fin. Arven reprend le chemin de chez lui. Le village, la route et les terres environnantes lui sont parfaitement familiers. Il ne se doute pas encore que cette journée ordinaire touche à sa fin.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Il est temps de rentrer."
+			}
+		],
+		"choices": [
+			{
+				"id": "continuer-retour",
+				"text": "Continuer son chemin.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-silence"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-silence",
+		"title": "Le silence",
+		"description": "Quelque chose change sans qu'Arven sache immédiatement quoi. Il ralentit. La route est étrangement calme. Puis il comprend ce qui le dérange : les animaux ont cessé de faire le moindre bruit.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Attends..."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Pourquoi est-ce que tout est silencieux ?"
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-silence",
+				"text": "S'arrêter et observer les alentours.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_noticed_the_silence",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-animaux"
+			},
+			{
+				"id": "continuer-silence",
+				"text": "Continuer malgré le silence.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_ignored_the_silence",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-animaux"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-animaux",
+		"title": "Les animaux se taisent",
+		"description": "Les oiseaux sont silencieux. Les chiens ne donnent plus de voix. Les chevaux eux-mêmes semblent figés. Arven observe les animaux autour de lui : ils ne fuient pas, ne s'agitent pas et ne produisent aucun son.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Même les chiens..."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Qu'est-ce qui leur arrive ?"
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-animaux",
+				"text": "Observer attentivement les animaux.",
+				"conditions": [
+					{
+						"type": "flag",
+						"key": "arven_noticed_the_silence",
+						"operator": "equals",
+						"value": true
+					}
+				],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_observed_silent_animals",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-tension"
+			},
+			{
+				"id": "ne-pas-s-attarder",
+				"text": "Ne pas s'attarder et rentrer chez lui.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-tension"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-tension",
+		"title": "Quelque chose approche",
+		"description": "Arven reprend son chemin. Le silence devient presque oppressant. Puis il ressent une légère vibration sous ses pieds. Il s'arrête. La terre semble bouger.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Qu'est-ce que..."
+			}
+		],
+		"choices": [
+			{
+				"id": "chercher-abri",
+				"text": "Chercher un endroit où s'abriter.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-tremblement"
+			},
+			{
+				"id": "continuer-maison",
+				"text": "Essayer de rejoindre sa maison.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-tremblement"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-tremblement",
+		"title": "Le tremblement",
+		"description": "Le sol se met brutalement à trembler. En quelques secondes, les vibrations deviennent extrêmement violentes. Arven peine à rester debout tandis que les bâtiments et les arbres autour de lui sont secoués avec une force terrifiante.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Un tremblement de terre !"
+			}
+		],
+		"choices": [
+			{
+				"id": "s-abriter",
+				"text": "S'accrocher et attendre que le tremblement passe.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_survived_tremor",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-violent"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-violent",
+		"title": "La terre se déchaîne",
+		"description": "Le tremblement devient encore plus violent. Arven entend le bois craquer et la pierre gronder. Pendant quelques instants, il a l'impression que le sol lui-même est en train de se déchirer sous ses pieds.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Ça ne peut pas continuer..."
+			}
+		],
+		"choices": [
+			{
+				"id": "tenir-bon",
+				"text": "Tenir bon.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-arret"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-arret",
+		"title": "L'arrêt",
+		"description": "Puis tout s'arrête. Instantanément. Le sol cesse de trembler. Le grondement disparaît. Aucun mouvement résiduel ne suit. Après la violence du séisme, le silence paraît presque irréel.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "..."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "C'est terminé ?"
+			}
+		],
+		"choices": [
+			{
+				"id": "regarder-autour",
+				"text": "Regarder autour de soi.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_witnessed_wyrdane_wave",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-apparition"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-apparition",
+		"title": "Quelque chose a changé",
+		"description": "Arven relève la tête. Le paysage familier est toujours là, mais il n'est plus seul. À travers les arbres, les champs et les bâtiments qu'il connaît, des formes nouvelles apparaissent. Certaines semblent être des plantes. D'autres ressemblent à des pierres dressées ou à des constructions.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Qu'est-ce que c'est ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Ce n'était pas là."
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-nouveaux-lieux",
+				"text": "Observer attentivement les environs.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_saw_new_landscape",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-position"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-position",
+		"title": "Un paysage impossible",
+		"description": "Arven tente de comprendre ce qu'il voit. Les choses qui viennent d'apparaître semblent appartenir à un autre endroit. Certaines formations paraissent naturelles, tandis que d'autres semblent avoir été construites par quelqu'un. Pourtant, rien ne permet de comprendre comment elles ont pu apparaître ici.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Je ne comprends pas."
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-valecendre",
+				"text": "Observer les environs de Valecendre.",
+				"conditions": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"operator": "equals",
+						"value": 1
+					}
+				],
+				"effects": [],
+				"nextScene": "premiere-vague-valecendre"
+			},
+			{
+				"id": "observer-caldrath",
+				"text": "Observer les environs de Caldrath.",
+				"conditions": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"operator": "equals",
+						"value": 2
+					}
+				],
+				"effects": [],
+				"nextScene": "premiere-vague-caldrath"
+			},
+			{
+				"id": "observer-maison",
+				"text": "Regarder ce qui entoure sa maison.",
+				"conditions": [
+					{
+						"type": "variable",
+						"key": "arven_end_day_location",
+						"operator": "equals",
+						"value": 3
+					}
+				],
+				"effects": [],
+				"nextScene": "premiere-vague-maison"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-valecendre",
+		"title": "Valecendre n'est plus seule",
+		"description": "Arven reconnaît les maisons et les champs de Valecendre. Pourtant, quelque chose s'est ajouté au paysage. Une végétation inconnue pousse désormais entre les champs et au bord des chemins. Certaines plantes ont de longues tiges pâles couvertes de feuilles presque translucides. D'autres forment de larges buissons aux feuilles sombres et épaisses, comme si elles avaient poussé là depuis des années.",
+		"location": "valecendre",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Ces plantes..."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je ne les ai jamais vues."
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-obelisque-valecendre",
+				"text": "Regarder les grandes pierres dressées au loin.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-obelisques-valecendre"
+			},
+			{
+				"id": "observer-vegetation-valecendre",
+				"text": "S'approcher de la végétation inconnue.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_examined_new_vegetation",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-vegetation-valecendre"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-vegetation-valecendre",
+		"title": "Une végétation inconnue",
+		"description": "Arven s'approche des nouvelles plantes. Certaines poussent à travers la terre comme si elles y étaient enracinées depuis longtemps. Une mousse sombre recouvre plusieurs pierres. Des lianes fines s'étendent entre les arbres. Rien ne ressemble à une plante qu'Arven ait pu rencontrer lors de ses voyages.",
+		"location": "valecendre",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Elles ont l'air d'avoir poussé ici depuis des années."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Mais je les aurais forcément remarquées."
+			}
+		],
+		"choices": [
+			{
+				"id": "voir-obelisques",
+				"text": "Regarder les formations dressées au loin.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-obelisques-valecendre"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-obelisques-valecendre",
+		"title": "Les obélisques",
+		"description": "Au-delà des champs de Valecendre se dressent plusieurs structures impossibles à ignorer. De grands obélisques sombres émergent du sol. Ils sont hauts et parfaitement immobiles. Leur surface semble faite d'une pierre inconnue, presque noire, parcourue par de fines marques géométriques.",
+		"location": "valecendre",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Des obélisques..."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Il n'y avait rien de tout ça ici."
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-obelisques",
+				"text": "Observer les obélisques à distance.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_saw_unknown_obelisks",
+						"value": true
+					},
+					{
+						"type": "flag",
+						"key": "arven_first_wave_valecendre",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-fin"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-caldrath",
+		"title": "Caldrath transformée",
+		"description": "Depuis Caldrath, le changement paraît encore plus immense. La capitale est toujours là, ses murailles et ses bâtiments n'ont pas disparu, mais l'horizon a changé. Au-delà des terres connues s'étendent désormais des reliefs inconnus et des formations gigantesques qui n'existaient pas quelques instants auparavant.",
+		"location": "caldrath",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Ce n'est pas possible."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Qu'est-ce qui est apparu autour de la ville ?"
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-horizon-caldrath",
+				"text": "Regarder l'horizon.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-horizon-caldrath"
+			},
+			{
+				"id": "observer-rues-caldrath",
+				"text": "Regarder les rues et les bâtiments autour de soi.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-rues-caldrath"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-horizon-caldrath",
+		"title": "Au-delà de Caldrath",
+		"description": "Au-delà de la capitale apparaissent des formations rocheuses qui semblent impossibles à cette distance. De larges falaises se dressent là où Arven ne connaît que des terres ouvertes. Plus loin, plusieurs silhouettes verticales dominent l'horizon. Elles ressemblent à des obélisques gigantesques.",
+		"location": "caldrath",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Des montagnes ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Non... elles n'étaient pas là."
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-obelisques-caldrath",
+				"text": "Observer les immenses structures à l'horizon.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_saw_unknown_obelisks",
+						"value": true
+					},
+					{
+						"type": "flag",
+						"key": "arven_first_wave_caldrath",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-fin"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-rues-caldrath",
+		"title": "Une ville entourée par l'inconnu",
+		"description": "Dans les rues de Caldrath, le changement est moins immédiatement visible. Les bâtiments sont toujours là, les rues aussi. Mais au-delà des murs et des toits, des arbres inconnus et des formations rocheuses sont désormais visibles. Une brume très légère flotte autour de certaines nouvelles structures.",
+		"location": "caldrath",
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Les murs sont toujours là..."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Mais ce qu'il y a derrière eux..."
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-structures-caldrath",
+				"text": "Observer les nouvelles structures.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_saw_unknown_obelisks",
+						"value": true
+					},
+					{
+						"type": "flag",
+						"key": "arven_first_wave_caldrath",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-fin"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-maison",
+		"title": "Autour de la maison",
+		"description": "Arven est avec sa famille lorsque le tremblement s'arrête. Lorsqu'il regarde par la fenêtre, il reconnaît encore Valecendre, mais le paysage autour de leur maison a changé. Des plantes inconnues couvrent désormais certaines zones du terrain. Plus loin, plusieurs structures sombres se dressent au milieu des terres.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "elira-veyr"],
+		"dialogue": [
+			{
+				"speaker": "elira-veyr",
+				"text": "Arven..."
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je suis là."
+			},
+			{
+				"speaker": "elira-veyr",
+				"text": "Qu'est-ce qui vient de se passer ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je ne sais pas."
+			},
+			{
+				"speaker": "elira-veyr",
+				"text": "Regarde dehors."
+			}
+		],
+		"choices": [
+			{
+				"id": "regarder-vegetation-maison",
+				"text": "Observer la végétation apparue autour de la maison.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_examined_new_vegetation",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-vegetation-maison"
+			},
+			{
+				"id": "regarder-obelisques-maison",
+				"text": "Regarder les grandes structures au loin.",
+				"conditions": [],
+				"effects": [],
+				"nextScene": "premiere-vague-obelisques-maison"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-vegetation-maison",
+		"title": "Des plantes inconnues",
+		"description": "À quelques mètres de la maison, une végétation inconnue a poussé au milieu du terrain. Certaines plantes ont des feuilles longues et pâles. D'autres possèdent des tiges sombres couvertes de petites excroissances. Elles semblent parfaitement vivantes, comme si elles avaient toujours appartenu à cet endroit.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "elira-veyr"],
+		"dialogue": [
+			{
+				"speaker": "elira-veyr",
+				"text": "Tu as déjà vu ces plantes ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Jamais."
+			},
+			{
+				"speaker": "elira-veyr",
+				"text": "Alors d'où viennent-elles ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je n'en sais rien."
+			}
+		],
+		"choices": [
+			{
+				"id": "observer-obelisques-maison",
+				"text": "Regarder les structures sombres au loin.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_first_wave_home",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-obelisques-maison"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-obelisques-maison",
+		"title": "Les silhouettes noires",
+		"description": "Au-delà des terres familières, plusieurs obélisques se dressent désormais dans le paysage. Ils semblent avoir émergé du sol en un instant. Leur pierre sombre reflète à peine la lumière. Même à cette distance, leur forme paraît parfaitement régulière.",
+		"location": "valecendre",
+		"characters": ["arven-veyr", "elira-veyr"],
+		"dialogue": [
+			{
+				"speaker": "elira-veyr",
+				"text": "Qu'est-ce que c'est ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Je ne sais pas."
+			},
+			{
+				"speaker": "elira-veyr",
+				"text": "Ils étaient là avant ?"
+			},
+			{
+				"speaker": "arven-veyr",
+				"text": "Non."
+			}
+		],
+		"choices": [
+			{
+				"id": "fin-vague-maison",
+				"text": "Rester auprès d'Elira et observer le paysage.",
+				"conditions": [],
+				"effects": [
+					{
+						"type": "flag",
+						"key": "arven_first_wave_home",
+						"value": true
+					},
+					{
+						"type": "flag",
+						"key": "arven_saw_unknown_obelisks",
+						"value": true
+					}
+				],
+				"nextScene": "premiere-vague-fin"
+			}
+		]
+	},
+	{
+		"id": "premiere-vague-fin",
+		"title": "0 AW",
+		"description": "Le monde est silencieux. Le tremblement de terre est terminé aussi brutalement qu'il avait commencé. Arven regarde les nouveaux paysages, la végétation inconnue et les structures qui viennent d'apparaître. Rien de tout cela n'existait quelques instants auparavant. Il ne sait pas ce qui s'est produit. Il ne sait pas encore ce que cela signifie. Mais il sait que le monde qu'il connaissait vient de changer.",
+		"location": null,
+		"characters": ["arven-veyr"],
+		"dialogue": [
+			{
+				"speaker": "arven-veyr",
+				"text": "Ce n'est plus le même monde."
+			}
+		],
+		"choices": []
+	}
+]
